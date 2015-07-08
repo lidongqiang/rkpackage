@@ -68,7 +68,7 @@
                 <!-- SuperBand_0 is low bands -->
                 <SuperBand_0>
                     <!-- Limitx will be used till PCLThresholdx -->
-                    <Limit0>1.0</Limit0>
+                    <Limit0>0.5</Limit0>
                     <Limit1>2</Limit1>
                     <!-- Threshold for PCL limit change -->
                     <PCLThreshold0>5</PCLThreshold0>
@@ -76,7 +76,7 @@
                 <!-- SuperBand_1 is high bands -->
                 <SuperBand_1>
                     <!-- Limitx will be used till PCLThresholdx -->
-                    <Limit0>1.0</Limit0>
+                    <Limit0>0.5</Limit0>
                     <Limit1>2</Limit1>
                     <!-- Threshold for PCL limit change -->
                     <PCLThreshold0>0</PCLThreshold0>

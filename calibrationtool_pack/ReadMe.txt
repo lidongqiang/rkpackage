@@ -6,14 +6,17 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-[2015-06-24]V1.9
+[2015-07-07]V1.20
+1 update dlls adds log for success rate record
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-06-24]V1.19
 1、fix SN used up 2 
 2、modify function GTIClientSendRecv timeout from 2000 to 5000
-[2015-06-18]V1.8
+[2015-06-18]V1.18
 1、weibu field modify xml 
     Band_1:BERLevel_RMC384_0  -90 -> -102
     #RSCP_limit_0              -3  -> -8
-[2015-06-13]V1.7
+[2015-06-13]V1.17
 1、for 3G band error select
 2、for nand machine,try open client more times 
 [2015-06-10]V1.17

@@ -122,7 +122,7 @@
 			<RFVerify_enable_2G_Template_result>1</RFVerify_enable_2G_Template_result>
 			<RFVerify_enable_2G_Template_PassFail>1</RFVerify_enable_2G_Template_PassFail>
 			<RFVerify_enable_2G_ModSpec>1</RFVerify_enable_2G_ModSpec>
-			<RFVerify_enable_2G_SwitchSpec>1</RFVerify_enable_2G_SwitchSpec>
+			<RFVerify_enable_2G_SwitchSpec>0</RFVerify_enable_2G_SwitchSpec>
         </Tx>
     </GSM>
     <UMTS>

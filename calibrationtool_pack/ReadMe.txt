@@ -5,9 +5,13 @@ Name:lanshh
 mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
+
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-07-19]V1.22
+1 Add open log folder button in config window
 [2015-07-13]V1.21
 1 modify ilpc f start point
+2 merge with zjb 20150714 dlls,retry when spectrum failed
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 [2015-07-07]V1.20
 1 update dlls adds log for success rate record

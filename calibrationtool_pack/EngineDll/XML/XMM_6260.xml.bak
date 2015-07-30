@@ -161,7 +161,7 @@
             <AFCAdjARFCNPCL>
                 <GSM900>
                     <ChannelNumber>62</ChannelNumber>
-                    <PCL>12</PCL>
+                    <PCL>15</PCL>
                     <expectedpwr>13</expectedpwr>
                 </GSM900>
                 <GSM1800>

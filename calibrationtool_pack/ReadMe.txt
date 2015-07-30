@@ -5,10 +5,28 @@ Name:lanshh
 mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
-
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-07-30]V1.22
+1 merge with zjb CodePackage_20150724
+2 wjx modify 
+            <AFCAdjARFCNPCL>
+                <GSM900>
+                    <ChannelNumber>62</ChannelNumber>
+                    <PCL>12</PCL>   
+                    <expectedpwr>13</expectedpwr>
+                </GSM900>
+<!-- from 15 - 12 -->
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 [2015-07-19]V1.22
 1 Add open log folder button in config window
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-07-13]V1.21
+1 modify ilpc f start point
+2 merge with zjb 20150714 dlls,retry when spectrum failed
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-07-19]V1.22
+1 Add open log folder button in config window
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 [2015-07-13]V1.21
 1 modify ilpc f start point
 2 merge with zjb 20150714 dlls,retry when spectrum failed

@@ -1,89 +1,52 @@
-<?xml version="1.1" encoding="utf-8"?>
-<Options XML_Version="1.6">
-    <!-- Specifies name of base/platform xml file -->
-    <Base>RF_Verification.xml</Base>
-    <Project>XMM6260</Project>
+<?xml version="1.0" encoding="utf-8" ?>
+<Options XML_Version="1.2">
+    <Base>XMM_6260.xml</Base>
+    <Project>XMM6321</Project>
     <Common>
-        <RFChip>1</RFChip>
-        <UseGTI4NVM>1</UseGTI4NVM>
-        <SerialDTR>1</SerialDTR>
-        <SerialRTS>0</SerialRTS>
-        <Use_IPICOM>1</Use_IPICOM>
-        <AutoScanInstruments>0</AutoScanInstruments>
-        <ShowDialogMissingInstrument>0</ShowDialogMissingInstrument>
-        <AutoTargetConnect>0</AutoTargetConnect>
-        <ModuleTest>0</ModuleTest>
-        <EnableCalPlots>1</EnableCalPlots>
-        <UseBitmap>1</UseBitmap>
-        <AddCmuDelay>0</AddCmuDelay>
-        <Call_gcalucalkill>1</Call_gcalucalkill>
-        <!-- Enables DWDIO/IPICOM serial communications and function call tracing -->
-        <EnableDWDIOTrace>0</EnableDWDIOTrace>
-        <RFVerification>1</RFVerification>
-        <RFCalibration>1</RFCalibration>
-        <InvalidateNVM>
-		        <!-- 1 - ignore nvm mismatch,2 - abort on mismatch, 3 - invalidate nvm, 4 - always invalidate -->
-		    <Action>2</Action>
-        	<Group1>cal_rf_ue2</Group1>
-        </InvalidateNVM>
+        <Use_IPICOM>6</Use_IPICOM>
+		<CP_Path>DUT/CP:GTICOM</CP_Path>
+        <Use_DedicatedCH>1</Use_DedicatedCH>			
         <RFProductionFlow>1</RFProductionFlow>
-        <DualPortDiversity>0</DualPortDiversity>
-        <TransitionAllowed>1</TransitionAllowed>
-        <DisableLteVerif>1</DisableLteVerif>
+        <!-- Do NOT set DUT to NORMAL mode after calibration: 1-Don't set Normal,0-set Normal-->
+        <DontSetNormal>1</DontSetNormal>	
+        <!-- How to read SW build and Version info. 0 - don't read it, 1 - use at+xgendata, 2 - use at@registry -->
+		<GetSWbuildAndLabelVersion>1</GetSWbuildAndLabelVersion>		
+		<SetUTACalibmode>1</SetUTACalibmode>
+		<!-- Read Chip id from NVM -->
+		<ReadChipID>1</ReadChipID>
+        <RFVerification>1</RFVerification>			
     </Common>
-    <Bridge>
-        <Enable>0</Enable>
-        <inputfilename>C:/Test_Reports/init_cfg_table_calib.inc</inputfilename>
-        <outputfilename>C:/Test_Reports/output</outputfilename>
-    </Bridge>
+    <Startup>
+        <!-- Enable the startup sequence to be executed -->
+        <Execute>1</Execute>
+        <Item1>at@bmm:UtaModeGet()</Item1>
+        <Item2>at@gticom:set_trace_severity(trace_debug)</Item2>
+    </Startup>	
     <GSM>
-        <Common>
-            <!-- Production Verification enabling and disabling of measurements: 1-enable,0-disable -->
-            <ProdVer_RXmeas>1</ProdVer_RXmeas>
-            <ProdVer_TXmodmeas>1</ProdVer_TXmodmeas>
-            <ProdVer_TXSwspecmeas>1</ProdVer_TXSwspecmeas>
-            <ProdVer_TXModspecmeas>1</ProdVer_TXModspecmeas>
-        </Common>
         <Rx>
-            <PerformNewSUE2FastCal>1</PerformNewSUE2FastCal>
-            <DiversityMode>2</DiversityMode>
-            <HighGainLevel>-60</HighGainLevel>
-            <LowGainLevel>-32</LowGainLevel>
-            <GeneratorLevel>-60</GeneratorLevel>
-            <VerificationLimit>1.8</VerificationLimit>
-            <VerificationLimitGS>1.8</VerificationLimitGS>
-            <CWOffsetFreq>67708</CWOffsetFreq>
-            <VerificationCWFreqOffset>60000</VerificationCWFreqOffset>
-            <CWOffsetRxlevQ4>0</CWOffsetRxlevQ4>
-            <SUE2MinCallLimit>-12</SUE2MinCallLimit>
-            <SUE2MaxCallLimit>5</SUE2MaxCallLimit>
-            <AllowedMeasurementErrorQ4>160</AllowedMeasurementErrorQ4>
-            <VerificationAverage>96</VerificationAverage>
-            <sfcwidth>0.020</sfcwidth>
-            <sfcfcbReps>15</sfcfcbReps>
-        <MaxGainOffset>3</MaxGainOffset>
+		<!---0 = Rx, 1 = Rd, 2 = Rx and Rd -->
+            <DiversityMode>0</DiversityMode>
+			   <Fast>
+                 <Method>1</Method>
+               </Fast>
+			<RxExtraDelay>8</RxExtraDelay>
         </Rx>
         <Tx>
-            <VerifyNumberPCLs>1</VerifyNumberPCLs>
-            <PCLVerifLimit>
-                <!-- SuperBand_0 is low bands -->
-                <SuperBand_0>
-                    <!-- Limitx will be used till PCLThresholdx -->
-                    <Limit0>1.0</Limit0>
-                    <Limit1>2</Limit1>
-                    <!-- Threshold for PCL limit change -->
-                    <PCLThreshold0>5</PCLThreshold0>
-                </SuperBand_0>
-                <!-- SuperBand_1 is high bands -->
-                <SuperBand_1>
-                    <!-- Limitx will be used till PCLThresholdx -->
-                    <Limit0>1.0</Limit0>
-                    <Limit1>2</Limit1>
-                    <!-- Threshold for PCL limit change -->
-                    <PCLThreshold0>0</PCLThreshold0>
-                </SuperBand_1>
-            </PCLVerifLimit>
-            <Droop_correction>0.0</Droop_correction>
+	    <DCXOSupport>1</DCXOSupport>    
+            <ReadPAtype>1</ReadPAtype>
+            <FreqCompIdx>6</FreqCompIdx>
+            <CommonTX>
+                <Pedestalcal>1</Pedestalcal>
+                <Fast>
+                    <Method>1</Method>
+                </Fast>
+            </CommonTX>
+            <OL_Channel>
+                <Ch_Index_0>2</Ch_Index_0>
+                <Ch_Index_1>2</Ch_Index_1>
+                <Ch_Index_2>2</Ch_Index_2>
+                <Ch_Index_3>2</Ch_Index_3>
+            </OL_Channel>
             <Channel>
                 <Ch_Index_0>-1</Ch_Index_0>
                 <Ch_Index_1>0</Ch_Index_1>
@@ -91,6 +54,7 @@
                 <Ch_Index_3>-1</Ch_Index_3>
             </Channel>
             <Channels>
+                <!-- Frequency sweep -->
                 <Channel_Index_0_0>0</Channel_Index_0_0>
                 <Channel_Index_0_1>1</Channel_Index_0_1>
                 <Channel_Index_0_2>2</Channel_Index_0_2>
@@ -112,124 +76,63 @@
                 <Channel_Index_3_3>3</Channel_Index_3_3>
                 <Channel_Index_3_4>4</Channel_Index_3_4>
             </Channels>
+            <IndexList>
+                <!-- Rampscales -->
+                <Index_1>1</Index_1>
+                <Index_2>2</Index_2>
+                <Index_3>3</Index_3>
+                <Index_4>4</Index_4>
+                <Index_5>5</Index_5>
+                <Index_6>6</Index_6>
+                <Index_7>7</Index_7>
+                <Index_8>8</Index_8>
+                <Index_9>9</Index_9>
+                <Index_10>10</Index_10>
+                <Index_11>11</Index_11>
+                <Index_12>12</Index_12>
+                <Index_13>13</Index_13>
+                <Index_14>14</Index_14>
+                <Index_15>15</Index_15>
+            </IndexList>
+            <OL_IndexList>
+                <!-- Rampscales -->
+                <Index_0>1</Index_0>
+                <Index_1>2</Index_1>
+                <Index_2>3</Index_2>
+                <Index_3>4</Index_3>
+                <Index_4>5</Index_4>
+                <Index_5>6</Index_5>
+                <Index_6>7</Index_6>
+                <Index_7>10</Index_7>
+                <Index_8>12</Index_8>
+                <Index_9>15</Index_9>
+                <Index_10>17</Index_10>
+                <Index_11>20</Index_11>
+                <Index_12>25</Index_12>
+                <Index_13>30</Index_13>
+                <Index_14>34</Index_14>
+		<Index_15>37</Index_15>
+            </OL_IndexList>
+            <FrequencyOpenLoopMode>1</FrequencyOpenLoopMode>
         </Tx>
-        <BatteryAdj>
-            <VBAT1>3.3</VBAT1>
-            <VBAT2>4.2</VBAT2>
-            <Limits>
-                <VBATGainLimit>
-                    <Low>1000</Low>
-                    <Mid>8000</Mid>
-                    <High>9999</High>
-                </VBATGainLimit>
-                <VBATOffsetLimit>
-                    <Low>-1000</Low>
-                    <Mid>0</Mid>
-                    <High>1000</High>
-                </VBATOffsetLimit>
-                <VBAT_test>3.8</VBAT_test>
-            </Limits>
-            <VerificationLimit>
-                <VBat_Max_error_mV>
-                    <Low>-500</Low>
-                    <Mid>0</Mid>
-                    <High>500</High>
-                </VBat_Max_error_mV>
-            </VerificationLimit>
-            <CustTag>0</CustTag>
-        </BatteryAdj>
-        <AFCAdjust>
-            <VCXOadjustDACdelta>50</VCXOadjustDACdelta>
-            <Adjustedfreqerrorlimit>
-                <Low>-50</Low>
-                <Mid>0</Mid>
-                <High>50</High>
-            </Adjustedfreqerrorlimit>
-            <TemperatureLimits>
-                <Low>15</Low>
-                <High>45</High>
-            </TemperatureLimits>
-            <Tune>
-                <Low>500</Low>
-                <Mid>1500</Mid>
-                <High>3596</High>
-            </Tune>
-            <Slope>
-                <Low>3</Low>
-                <Mid>7</Mid>
-                <High>30</High>
-            </Slope>
-            <AFCAdjARFCNPCL>
-                <GSM900>
-                    <ChannelNumber>62</ChannelNumber>
-                    <PCL>10</PCL>
-                    <expectedpwr>23</expectedpwr>
-                </GSM900>
-                <GSM1800>
-                    <ChannelNumber>512</ChannelNumber>
-                    <PCL>12</PCL>
-                    <expectedpwr>0</expectedpwr>
-                </GSM1800>
-                <GSM850>
-                    <ChannelNumber>170</ChannelNumber>
-                    <PCL>15</PCL>
-                    <expectedpwr>0</expectedpwr>
-                </GSM850>
-                <GSM1900>
-                    <ChannelNumber>513</ChannelNumber>
-                    <PCL>12</PCL>
-                    <expectedpwr>0</expectedpwr>
-                </GSM1900>
-            </AFCAdjARFCNPCL>
-        </AFCAdjust>
     </GSM>
     <UMTS>
         <Common>
-            <Nof_Umts_Bands>5</Nof_Umts_Bands>
+            <Nof_Umts_Bands>4</Nof_Umts_Bands>
             <Band_A>1</Band_A>
             <Band_B>2</Band_B>
-            <Band_C>4</Band_C>
-            <Band_D>5</Band_D>
-            <Band_E>8</Band_E>
-            <fspeeddelay>200</fspeeddelay>
+            <Band_C>5</Band_C>
+            <Band_D>8</Band_D>
         </Common>
+		<Fast>
+          <Method>1</Method>
+        </Fast>
+		<!---0 = Rx, 1 = Rd, 2 = Rx and Rd -->
         <RX>
             <RX3GDiversityMode>2</RX3GDiversityMode>
-            <RXlevCompensateLevel>0</RXlevCompensateLevel>
-            <MinimumValidGainCorrectionValue>-192</MinimumValidGainCorrectionValue>
-            <MaximumValidGainCorrectionValue>80</MaximumValidGainCorrectionValue>
-            <RX3G_CW_OFFSET>1000000</RX3G_CW_OFFSET>
-            <CommonGeneratorLevel>-60</CommonGeneratorLevel>
-            <VerificationLimitHighGain>1.2</VerificationLimitHighGain>
-            <VerificationLimitLowGain>1.2</VerificationLimitLowGain>
-            <VerificationCWOffset>-1.375</VerificationCWOffset>
-            <HighGainLevel>-60</HighGainLevel>
-            <LowGainLevel>-32</LowGainLevel>
-            <DisableRdBand1>0</DisableRdBand1>
-            <DisableRdBand8>0</DisableRdBand8>
-        <MaxGainOffset>3</MaxGainOffset>
         </RX>
-        <TX>
-            <Min_OL_Power>-57</Min_OL_Power>
-            <Limit_OL_Freq_Comp>64</Limit_OL_Freq_Comp>
-            <Limit_CL_Freq_Comp>64</Limit_CL_Freq_Comp>
-            <SUE2_InitCFG_Threshold>23500</SUE2_InitCFG_Threshold>
-            <VerificationLimit>1.0</VerificationLimit>
-            <RelaxedVerificationLimit>2.0</RelaxedVerificationLimit>
-            <VerificationLimitMax>1.5</VerificationLimitMax>
-            <VerificationLimitLowLevels>1.8</VerificationLimitLowLevels>
-            <VerificationLimitLowLevelsThreshold>5</VerificationLimitLowLevelsThreshold>
-            <UE2_OL_POWER_TOL>10</UE2_OL_POWER_TOL>
-            <UE2_OL_POWER_MAX>6</UE2_OL_POWER_MAX>
-            <UE2_CL_POWER_MIN>-6</UE2_CL_POWER_MIN>
-            <UE2_CL_POWER_MAX>25</UE2_CL_POWER_MAX>
-            <UE2_CL_Channel_comp_backof>6</UE2_CL_Channel_comp_backof>
-            <UE2_PCTRL_Interpolation>1</UE2_PCTRL_Interpolation>
-            <flip_UE2_OL_table>0</flip_UE2_OL_table>
-            <SUE2_pilled_cmd>0</SUE2_pilled_cmd>
-        </TX>
     </UMTS>
-    <UserSettings>
+<UserSettings>
         <![CDATA[<Envelope>
     	<CategoryList>
     		<Category>
@@ -437,7 +340,7 @@
 	    									<ID>Rd</ID>
     									</Item>
     								</ItemList>
-    							</Map>
+    							</Map>    							
     						</ValueMap>
     					</Destination>
     					<ItemList>
@@ -489,7 +392,7 @@
 	    									<ID>Rd</ID>
     									</Item>
     								</ItemList>
-    							</Map>
+    							</Map>    							
     						</ValueMap>
     					</Destination>
     					<ItemList>
@@ -511,25 +414,6 @@
     			<Hint>1</Hint>
     			<GroupList>
     				<Group>
-    					<Name>GTI</Name>
-    					<Constraints>
-    						<MinSelected>0</MinSelected>
-    						<MaxSelected>1</MaxSelected>
-    						<ItemType>bool</ItemType>
-    					</Constraints>
-    					<Destination>
-    						<Path>Common:Use_DedicatedCH</Path>
-    					</Destination>
-    					<ItemList>
-    						<Item>
-    							<Label>Enable dedicated channel</Label>
-    							<Value>1</Value>
-    							<Description>Enables use of dedicated GTI channel for DUT communications.</Description>
-                  <Selected>0</Selected>
-    						</Item>
-    					</ItemList>
-    				</Group>
-                    <Group>
 			          <Name>NVM Mismatch</Name>
 			          <Constraints>
 			            <MinSelected>1</MinSelected>
@@ -600,7 +484,26 @@
 			              <Selected>0</Selected>
 			            </Item>
 			          </ItemList>
-			        </Group>
+			        </Group>					
+    				<Group>
+    					<Name>Mode after calibration</Name>
+    					<Constraints>
+    						<MinSelected>0</MinSelected>
+    						<MaxSelected>1</MaxSelected>
+    						<ItemType>bool</ItemType>
+    					</Constraints>
+    					<Destination>
+    						<Path>Common:DontSetNormal</Path>
+    					</Destination>
+    					<ItemList>
+    						<Item>
+    							<Label>Keep DUT in test mode after calibration</Label>
+    							<Value>1</Value>
+    							<Description>Keep DUT in test mode after calibration</Description>
+                                <Selected>0</Selected>
+    						</Item>
+    					</ItemList>
+    				</Group>						
     				<Group>
     					<Name>Instrument</Name>
     					<Constraints>
@@ -616,7 +519,7 @@
     							<Label>Reset instrument on scan</Label>
     							<Value>1</Value>
     							<Description>Performs instrument reset on initialize stage.</Description>
-                  <Selected>0</Selected>
+								<Selected>0</Selected>
     						</Item>
     					</ItemList>
     				</Group>
@@ -624,5 +527,5 @@
     		</Category>
     	</CategoryList>
     </Envelope>]]>
-</UserSettings>
+</UserSettings>	
 </Options>

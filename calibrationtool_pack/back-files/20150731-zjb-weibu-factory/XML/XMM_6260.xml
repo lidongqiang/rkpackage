@@ -55,12 +55,13 @@
             <CWOffsetFreq>67708</CWOffsetFreq>
             <VerificationCWFreqOffset>60000</VerificationCWFreqOffset>
             <CWOffsetRxlevQ4>0</CWOffsetRxlevQ4>
-            <SUE2MinCallLimit>-24</SUE2MinCallLimit>
-            <SUE2MaxCallLimit>10</SUE2MaxCallLimit>
+            <SUE2MinCallLimit>-12</SUE2MinCallLimit>
+            <SUE2MaxCallLimit>5</SUE2MaxCallLimit>
             <AllowedMeasurementErrorQ4>160</AllowedMeasurementErrorQ4>
             <VerificationAverage>96</VerificationAverage>
             <sfcwidth>0.020</sfcwidth>
             <sfcfcbReps>15</sfcfcbReps>
+        <MaxGainOffset>3</MaxGainOffset>
         </Rx>
         <Tx>
             <VerifyNumberPCLs>1</VerifyNumberPCLs>
@@ -161,8 +162,8 @@
             <AFCAdjARFCNPCL>
                 <GSM900>
                     <ChannelNumber>62</ChannelNumber>
-                    <PCL>15</PCL>
-                    <expectedpwr>13</expectedpwr>
+                    <PCL>10</PCL>
+                    <expectedpwr>23</expectedpwr>
                 </GSM900>
                 <GSM1800>
                     <ChannelNumber>512</ChannelNumber>
@@ -206,6 +207,7 @@
             <LowGainLevel>-32</LowGainLevel>
             <DisableRdBand1>0</DisableRdBand1>
             <DisableRdBand8>0</DisableRdBand8>
+        <MaxGainOffset>3</MaxGainOffset>
         </RX>
         <TX>
             <Min_OL_Power>-57</Min_OL_Power>

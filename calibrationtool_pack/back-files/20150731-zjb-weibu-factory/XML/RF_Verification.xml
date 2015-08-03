@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1" ?>
+<?xml version="1.0" encoding="iso-8859-1"?>
 <Options>
     <Project>RF Verification</Project>
     <Common>
@@ -48,8 +48,8 @@
             <MCS9BER_limit>2.4</MCS9BER_limit>
             <MCS9Rx_level_limit_0>-3</MCS9Rx_level_limit_0>
             <MCS9Rx_level_limit_1>3</MCS9Rx_level_limit_1>
-            <RFVerify_enable_2G_BER>1</RFVerify_enable_2G_BER>
-            <RFVerify_enable_2G_RSSI>1</RFVerify_enable_2G_RSSI>
+			<RFVerify_enable_2G_BER>1</RFVerify_enable_2G_BER>
+			<RFVerify_enable_2G_RSSI>1</RFVerify_enable_2G_RSSI>
         </Rx>
         <Tx>
             <InitPCL5BlockCount>13</InitPCL5BlockCount>
@@ -115,14 +115,14 @@
                 <Phase_error_peak>20</Phase_error_peak>
                 <Phase_error_RMS>5</Phase_error_RMS>
             </PCS1900>
-            <RFVerify_enable_2G_TXPower>1</RFVerify_enable_2G_TXPower>
-            <RFVerify_enable_2G_Freq_Err>1</RFVerify_enable_2G_Freq_Err>
-            <RFVerify_enable_2G_PhaseErr_RMS>1</RFVerify_enable_2G_PhaseErr_RMS>
-            <RFVerify_enable_2G_PhaseErr_Peak>1</RFVerify_enable_2G_PhaseErr_Peak>
-            <RFVerify_enable_2G_Template_result>1</RFVerify_enable_2G_Template_result>
-            <RFVerify_enable_2G_Template_PassFail>1</RFVerify_enable_2G_Template_PassFail>
-            <RFVerify_enable_2G_ModSpec>1</RFVerify_enable_2G_ModSpec>
-            <RFVerify_enable_2G_SwitchSpec>1</RFVerify_enable_2G_SwitchSpec>
+			<RFVerify_enable_2G_TXPower>1</RFVerify_enable_2G_TXPower>
+			<RFVerify_enable_2G_Freq_Err>1</RFVerify_enable_2G_Freq_Err>
+			<RFVerify_enable_2G_PhaseErr_RMS>1</RFVerify_enable_2G_PhaseErr_RMS>
+			<RFVerify_enable_2G_PhaseErr_Peak>1</RFVerify_enable_2G_PhaseErr_Peak>
+			<RFVerify_enable_2G_Template_result>1</RFVerify_enable_2G_Template_result>
+			<RFVerify_enable_2G_Template_PassFail>1</RFVerify_enable_2G_Template_PassFail>
+			<RFVerify_enable_2G_ModSpec>1</RFVerify_enable_2G_ModSpec>
+			<RFVerify_enable_2G_SwitchSpec>1</RFVerify_enable_2G_SwitchSpec>
         </Tx>
     </GSM>
     <UMTS>
@@ -142,7 +142,7 @@
         <UARFCN_DL>10838</UARFCN_DL>
         <Sync_delay>2500</Sync_delay>
         <!-- Call type  RMC12_2 or RMC384 -->
-        <Call_Type>RMC12_2</Call_Type>
+		<Call_Type>RMC12_2</Call_Type>
         <!-- RX debug flag  -->
         <RXDBG_Flag>0</RXDBG_Flag>
         <CallType_RMC12_2>
@@ -157,14 +157,14 @@
                 <Channel_0>10800</Channel_0>
                 <SyncLevel_0>-60.0</SyncLevel_0>
                 <BERLevel_0>-102</BERLevel_0>
-                <BERLevel_RMC384_0>-102</BERLevel_RMC384_0>
+		<BERLevel_RMC384_0>-102</BERLevel_RMC384_0>
                 <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_1>
             <Band_div_1>
                 <Channel_0>10700</Channel_0>
                 <SyncLevel_0>-75.0</SyncLevel_0>
                 <BERLevel_0>-106</BERLevel_0>
-                <BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
+		<BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
                 <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_div_1>
             <!-- band 2-->
@@ -172,14 +172,14 @@
                 <Channel_0>9800</Channel_0>
                 <SyncLevel_0>-60.0</SyncLevel_0>
                 <BERLevel_0>-102</BERLevel_0>
-                <BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
+		<BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
                 <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_2>
             <Band_div_2>
                 <Channel_0>9800</Channel_0>
                 <SyncLevel_0>-75.0</SyncLevel_0>
                 <BERLevel_0>-100</BERLevel_0>
-                <BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
+		<BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
                 <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_div_2>
             <!-- band 3-->
@@ -187,14 +187,14 @@
                 <Channel_0>1337</Channel_0>
                 <SyncLevel_0>-75.0</SyncLevel_0>
                 <BERLevel_0>-104</BERLevel_0>
-                <BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
+		<BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
                 <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_3>
             <Band_div_3>
                 <Channel_0>1337</Channel_0>
                 <SyncLevel_0>-75.0</SyncLevel_0>
                 <BERLevel_0>-106</BERLevel_0>
-                <BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
+		<BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
                 <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_div_3>
             <!-- band 4-->
@@ -202,14 +202,14 @@
                 <Channel_0>1640</Channel_0>
                 <SyncLevel_0>-75.0</SyncLevel_0>
                 <BERLevel_0>-104</BERLevel_0>
-                <BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
+		<BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
                 <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_4>
             <Band_div_4>
                 <Channel_0>1640</Channel_0>
                 <SyncLevel_0>-75.0</SyncLevel_0>
                 <BERLevel_0>-106</BERLevel_0>
-                <BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
+		<BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
                 <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_div_4>
             <!-- band 5-->
@@ -217,14 +217,14 @@
                 <Channel_0>4407</Channel_0>
                 <SyncLevel_0>-60.0</SyncLevel_0>
                 <BERLevel_0>-102</BERLevel_0>
-                <BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
+		<BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
                 <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_5>
             <Band_div_5>
                 <Channel_0>4407</Channel_0>
                 <SyncLevel_0>-60.0</SyncLevel_0>
                 <BERLevel_0>-100</BERLevel_0>
-                <BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
+		<BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
                 <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_div_5>
             <!-- band 6-->
@@ -245,14 +245,14 @@
                 <Channel_0>2937</Channel_0>
                 <SyncLevel_0>-60.0</SyncLevel_0>
                 <BERLevel_0>-102</BERLevel_0>
-                <BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
+		<BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
                 <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_8>
             <Band_div_8>
                 <Channel_0>2937</Channel_0>
                 <SyncLevel_0>-75.0</SyncLevel_0>
                 <BERLevel_0>-106</BERLevel_0>
-                <BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
+		<BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
                 <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_div_8>
             <!-- band 9-->
@@ -286,13 +286,13 @@
                 <SyncLevel_0>-75.0</SyncLevel_0>
                 <BERLevel_0>-108.0</BERLevel_0>
                 <ILPCLevel_0>-75.0</ILPCLevel_0>
-            </Band_34>
+            </Band_34>			
             <Band_39>
                 <Channel_0>9501</Channel_0>
                 <SyncLevel_0>-75.0</SyncLevel_0>
                 <BERLevel_0>-108.0</BERLevel_0>
                 <ILPCLevel_0>-75.0</ILPCLevel_0>
-            </Band_39>
+            </Band_39>				
         </Channels>
         <Rx>
             <RX3GDiversityAutoDetect>1</RX3GDiversityAutoDetect>
@@ -322,17 +322,17 @@
             <ILPClimit_max>0.6</ILPClimit_max>
             <ILPClimit_min>-0.6</ILPClimit_min>
         </Tx>
-        <TDSTx>
-            <OBWlimit_max>1.6</OBWlimit_max>
-            <PCDErrorLimit>-21</PCDErrorLimit>
-            <!-- BER Bit patern 0= all zero,1 = all ones,2 = PN9 -->
-            <BerBitPattern>2</BerBitPattern>
+        <TDSTx>		
+		    <OBWlimit_max>1.6</OBWlimit_max>
+			<PCDErrorLimit>-21</PCDErrorLimit>
+			<!-- BER Bit patern 0= all zero,1 = all ones,2 = PN9 -->
+			<BerBitPattern>2</BerBitPattern>
             <ModulationLimits>17.5,17.5,17.5,17.5,10,10,200</ModulationLimits>
             <!-- Spectrum margin&OBW: AB,BC,CD,EF,FE,DC,CB,BA,OWA the values in dB -->
-            <Spectrum_margin>-49,-49,-39,-35,-35,-39,-49,-49</Spectrum_margin>
-            <!-- PVT limits for AB,CE,FH in dBm -->
-            <PVTLimits>-65,-50,-65</PVTLimits>
-        </TDSTx>
+            <Spectrum_margin>-49,-49,-39,-35,-35,-39,-49,-49</Spectrum_margin>	
+            <!-- PVT limits for AB,CE,FH in dBm -->			
+			<PVTLimits>-65,-50,-65</PVTLimits>
+		</TDSTx>		
     </UMTS>
     <LTE>
         <EnableExtendedLogging>0</EnableExtendedLogging>
@@ -539,12 +539,12 @@
             <RSRQ_limit_1>0</RSRQ_limit_1>
             <RSRQ_limit_2>3.5</RSRQ_limit_2>
         </Rx>
-        <RxNonSigMeasurements>
-            <EnableRxNonSigRSSIMeasurements>0</EnableRxNonSigRSSIMeasurements>
-            <RxNonSigDiversitymode>2</RxNonSigDiversitymode>
-            <RxNonSigRSSILimithigh>10</RxNonSigRSSILimithigh>
-            <RxNonSigRSSILimitlow>-10</RxNonSigRSSILimitlow>
-        </RxNonSigMeasurements>
+            <RxNonSigMeasurements>
+              <EnableRxNonSigRSSIMeasurements>0</EnableRxNonSigRSSIMeasurements>
+              <RxNonSigDiversitymode>2</RxNonSigDiversitymode>
+              <RxNonSigRSSILimithigh>10</RxNonSigRSSILimithigh>
+              <RxNonSigRSSILimitlow>-10</RxNonSigRSSILimitlow>
+            </RxNonSigMeasurements>
         <Tx>
             <enableTDDTx>0</enableTDDTx>
             <EnableMaxOutputPowerMeasurements>1</EnableMaxOutputPowerMeasurements>
@@ -658,7 +658,7 @@
                 <Channel_2>
                     <EARFCN_UL>18575</EARFCN_UL>
                 </Channel_2>
-            </Band_1>
+             </Band_1>
             <Band_2>
                 <RSSILevel>-75</RSSILevel>
                 <RxNoiseLevel>-95</RxNoiseLevel>
@@ -1216,7 +1216,7 @@
                     <EARFCN_UL>23205</EARFCN_UL>
                 </Channel_0>
                 <Channel_1>
-                    <EARFCN_UL>23230</EARFCN_UL>
+                    <EARFCN_UL>23230</EARFCN_UL>				
                     <TargetPower_0>368</TargetPower_0>
                     <TargetPower_1>336</TargetPower_1>
                     <TargetPower_2>304</TargetPower_2>
@@ -1257,7 +1257,7 @@
                 </Channel_1>
                 <Channel_2>
                     <EARFCN_UL>23255</EARFCN_UL>
-                </Channel_2>
+                </Channel_2>				
             </Band_13>
             <Band_14>
                 <RSSILevel>-75</RSSILevel>
@@ -1966,7 +1966,7 @@
             <Band_38>
                 <RSSILevel>-75</RSSILevel>
                 <RxNoiseLevel>-94</RxNoiseLevel>
-                <Channel_0>
+				<Channel_0>
                     <EARFCN_UL>37770</EARFCN_UL>
                 </Channel_0>
                 <Channel_1>
@@ -2011,14 +2011,14 @@
                 </Channel_1>
                 <Channel_2>
                     <EARFCN_UL>38200</EARFCN_UL>
-                </Channel_2>
+                </Channel_2>				
             </Band_38>
             <Band_39>
                 <RSSILevel>-75</RSSILevel>
-                <RxNoiseLevel>-94</RxNoiseLevel>
-                <Channel_0>
+                <RxNoiseLevel>-94</RxNoiseLevel>	
+				<Channel_0>
                     <EARFCN_UL>38300</EARFCN_UL>
-                </Channel_0>
+                </Channel_0>				
                 <Channel_1>
                     <EARFCN_UL>38450</EARFCN_UL>
                     <TargetPower_0>368</TargetPower_0>
@@ -2058,14 +2058,14 @@
                     <TargetPower_34>-720</TargetPower_34>
                     <TargetPower_35>-752</TargetPower_35>
                     <TargetPower_36>-784</TargetPower_36>
-                </Channel_1>
+                </Channel_1>					
             </Band_39>
             <Band_40>
                 <RSSILevel>-75</RSSILevel>
-                <RxNoiseLevel>-94</RxNoiseLevel>
-                <Channel_0>
+                <RxNoiseLevel>-94</RxNoiseLevel>	
+				<Channel_0>
                     <EARFCN_UL>38700</EARFCN_UL>
-                </Channel_0>
+                </Channel_0>					
                 <Channel_1>
                     <EARFCN_UL>39150</EARFCN_UL>
                     <TargetPower_0>368</TargetPower_0>
@@ -2105,12 +2105,12 @@
                     <TargetPower_34>-720</TargetPower_34>
                     <TargetPower_35>-752</TargetPower_35>
                     <TargetPower_36>-784</TargetPower_36>
-                </Channel_1>
+                </Channel_1>				
             </Band_40>
             <Band_41>
                 <RSSILevel>-75</RSSILevel>
-                <RxNoiseLevel>-94</RxNoiseLevel>
-                <Channel_0>
+                <RxNoiseLevel>-94</RxNoiseLevel>	
+				<Channel_0>
                     <EARFCN_UL>39700</EARFCN_UL>
                 </Channel_0>
                 <Channel_1>
@@ -2152,7 +2152,7 @@
                     <TargetPower_34>-720</TargetPower_34>
                     <TargetPower_35>-752</TargetPower_35>
                     <TargetPower_36>-784</TargetPower_36>
-                </Channel_1>
+                </Channel_1>				
             </Band_41>
             <EnableTxNonSigMeasurements>1</EnableTxNonSigMeasurements>
             <EnableNonSigRSSIMeasurementsPrimaryReceiver>1</EnableNonSigRSSIMeasurementsPrimaryReceiver>

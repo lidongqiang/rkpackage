@@ -6,6 +6,9 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-07-31]V1.22
+1 Flags: ignoreversion onlyifdoesntexist
+2 zjb 1.8.2 weibu factory modify
 [2015-07-30]V1.22
 1 merge with zjb CodePackage_20150724
 2 wjx modify 

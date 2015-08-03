@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "CalibrationTool"
-#define MyAppVersion "1.22_0719"
+#define MyAppVersion "1.22_0731.2"
 #define MyAppPublisher "Rockchip, Inc."
 #define MyAppURL "http://www.rock-chips.com/"
 #define MyAppExeName "CalibrationTool.exe"
@@ -49,8 +49,8 @@ Source: "Sprk2048dev.key"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Sprk2048dev_unfuse.key"; DestDir: "{app}"; Flags: ignoreversion
 Source: "unlockcodes.txt"; DestDir: "{app}"; Flags: ignoreversion
 ;Source: "config.ini"; DestDir: "{app}"; Flags: ignoreversion
-Source: "config_cn.ini"   ; DestDir: "{app}"; Flags: ignoreversion; Languages: cn ;DestName: "config.ini"
-Source: "config_en.ini"   ; DestDir: "{app}"; Flags: ignoreversion; Languages: en ;DestName: "config.ini"
+Source: "config_cn.ini"   ; DestDir: "{app}"; Flags: ignoreversion onlyifdoesntexist; Languages: cn ;DestName: "config.ini"
+Source: "config_en.ini"   ; DestDir: "{app}"; Flags: ignoreversion onlyifdoesntexist; Languages: en ;DestName: "config.ini"
 Source: "libipcs.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "libipcs_com_plugin.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "CalibrationTool.exe"; DestDir: "{app}"; Flags: ignoreversion

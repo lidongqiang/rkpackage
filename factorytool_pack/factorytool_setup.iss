@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "FactoryTool"
-#define MyAppVersion "1.26_0803"
+#define MyAppVersion "1.27_0811"
 #define MyAppPublisher "Rockchip, Inc."
 #define MyAppURL "http://www.rock-chips.com/"
 #define MyAppExeName "FactoryTool.exe"
@@ -47,6 +47,7 @@ Source: "FlashUSB_Driver\*"; DestDir: "{app}\FlashUSB_Driver"; Flags: ignorevers
 Source: "TraceViewer.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "TraceViewer.ini"; DestDir: "{app}"; Flags: ignoreversion
 Source: "TraceViewer.ddf"; DestDir: "{app}"; Flags: ignoreversion
+Source: "ReadMe.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "config_cn.ini"   ; DestDir: "{app}"; Flags: ignoreversion onlyifdoesntexist; Languages: cn ;DestName: "config.ini"
 Source: "config_en.ini"   ; DestDir: "{app}"; Flags: ignoreversion onlyifdoesntexist; Languages: en ;DestName: "config.ini"
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files

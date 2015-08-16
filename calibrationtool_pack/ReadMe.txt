@@ -6,6 +6,13 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-08-16]V1.25
+1 merge CodePackage_20150814
+2 Add write device sn ,bt mac,wifi mac
+3 seperate do cc cv rv afc
+[2015-08-13]V1.23
+1 Intel_Product_Line_RF_Tool_v1.8.10
+2 GSM:TxLimit_OL_Freq_Comp  64-> 80
 [2015-08-04]V1.23
 1 merge with CodePackage_20150731,retry cc 
 2 never modify sn if failed

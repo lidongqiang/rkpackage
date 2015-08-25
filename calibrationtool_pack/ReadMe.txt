@@ -6,6 +6,13 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-08-24]V1.25
+1 modify UI 
+[2015-08-21]V1.25
+1 add read write imei to verify imei writing
+2 ConvertStrWToMacAddress fix
+3 add WriteCheckIMEI function
+4 zjb 20150820 dlls
 [2015-08-16]V1.25
 1 merge CodePackage_20150814
 2 Add write device sn ,bt mac,wifi mac

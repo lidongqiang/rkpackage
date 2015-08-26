@@ -6,8 +6,10 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-[2015-08-24]V1.25
+[2015-08-25]V1.25
 1 modify UI 
+2 replace libipcs because of blocking when call DatalinkOpen
+3 distinguish locally administered(MAC +4) and globally unique(MAC +1)
 [2015-08-21]V1.25
 1 add read write imei to verify imei writing
 2 ConvertStrWToMacAddress fix

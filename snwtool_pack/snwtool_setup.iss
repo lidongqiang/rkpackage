@@ -2,7 +2,7 @@
 ; 有关创建 Inno Setup 脚本文件的详细资料请查阅帮助文档！
 
 #define MyAppName "SNWTool"
-#define MyAppVersion "1.1.21_0824"
+#define MyAppVersion "1.1.23_0831"
 #define MyAppPublisher "Fuzhou Rockchip Electronics Co., Ltd."
 #define MyAppURL "http://www.rock-chips.com/"
 #define MyAppExeName "SNWTool.exe"
@@ -44,12 +44,15 @@ Source: "{#APPPATH}\ReadMe.txt"; DestDir: "{app}"; Flags: ignoreversion
 ;Source: "config.bin"; DestDir: "{app}"; Flags: ignoreversion
 Source: "config_cn.bin"   ; DestDir: "{app}"; Flags: ignoreversion onlyifdoesntexist; Languages: chinesesimp ;DestName: "config.bin"
 Source: "config_en.bin"   ; DestDir: "{app}"; Flags: ignoreversion onlyifdoesntexist; Languages: english ;DestName: "config.bin"
+Source: "1.ini"   ; DestDir: "{app}"; Flags: ignoreversion ;
+Source: "2.ini"   ; DestDir: "{app}"; Flags: ignoreversion ;
 Source: "autoinfo.bin"; DestDir: "{app}"; Flags: ignoreversion
 Source: "IPICOM.DLL"; DestDir: "{app}"; Flags: ignoreversion
 Source: "libipcs.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "libipcs_com_plugin.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "sec_provision.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "signing_module.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "ReadMe.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Sprk2048dev.key"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Sprk2048dev_unfuse.key"; DestDir: "{app}"; Flags: ignoreversion
 Source: "unlockcodes.txt"; DestDir: "{app}"; Flags: ignoreversion

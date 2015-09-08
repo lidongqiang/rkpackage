@@ -2,11 +2,11 @@
 ; 有关创建 Inno Setup 脚本文件的详细资料请查阅帮助文档！
 
 #define MyAppName "SNWTool"
-#define MyAppVersion "1.1.23_0901"
+#define MyAppVersion "1.1.24_0908"
 #define MyAppPublisher "Fuzhou Rockchip Electronics Co., Ltd."
 #define MyAppURL "http://www.rock-chips.com/"
 #define MyAppExeName "SNWTool.exe"
-#define APPPATH    "D:\rkprojs\SNWTool_NEW\"
+#define APPPATH    "D:\rkprojs\SNWTool_NEW\bin"
 [Setup]
 ; 注: AppId的值为单独标识该应用程序。
 ; 不要为其他安装程序使用相同的AppId值。
@@ -37,9 +37,9 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "{#APPPATH}Release\SNWTool.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#APPPATH}Release\cn.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#APPPATH}Release\conf.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#APPPATH}\SNWTool.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#APPPATH}\cn.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#APPPATH}\conf.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#APPPATH}\ReadMe.txt"; DestDir: "{app}"; Flags: ignoreversion
 ;Source: "config.bin"; DestDir: "{app}"; Flags: ignoreversion
 Source: "config_cn.bin"   ; DestDir: "{app}"; Flags: ignoreversion onlyifdoesntexist; Languages: chinesesimp ;DestName: "config.bin"

@@ -6,6 +6,20 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-09-08]V1.27
+1 add cable loss measeure
+2 rf prompt message changge
+[2015-09-06]V1.27
+1 connect failed
+2 merge with CodePackage_20150906
+3 add read check function for stress test 
+4 battery and charge label modify
+5 enum gti com again if fail open
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-09-01]V1.26
+1 reboot check button 
+2 ui
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 [2015-08-25]V1.25
 1 modify UI 
 2 replace libipcs because of blocking when call DatalinkOpen

@@ -6,6 +6,10 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-09-10]V1.27
+1 remove band check when rf calibration
+2 set afc default slop from 30 to 35
+3 fix wifi cal commit
 [2015-09-08]V1.27
 1 add cable loss measeure
 2 rf prompt message changge

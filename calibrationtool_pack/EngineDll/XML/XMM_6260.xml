@@ -1,4 +1,4 @@
-<?xml version="1.1" encoding="utf-8"?>
+<?xml version="1.1" encoding="utf-8" ?>
 <Options XML_Version="1.6">
     <!-- Specifies name of base/platform xml file -->
     <Base>RF_Verification.xml</Base>
@@ -22,9 +22,9 @@
         <RFVerification>1</RFVerification>
         <RFCalibration>1</RFCalibration>
         <InvalidateNVM>
-		        <!-- 1 - ignore nvm mismatch,2 - abort on mismatch, 3 - invalidate nvm, 4 - always invalidate -->
-		    <Action>2</Action>
-        	<Group1>cal_rf_ue2</Group1>
+            <!-- 1 - ignore nvm mismatch,2 - abort on mismatch, 3 - invalidate nvm, 4 - always invalidate -->
+            <Action>2</Action>
+            <Group1>cal_rf_ue2</Group1>
         </InvalidateNVM>
         <RFProductionFlow>1</RFProductionFlow>
         <DualPortDiversity>0</DualPortDiversity>
@@ -61,7 +61,7 @@
             <VerificationAverage>96</VerificationAverage>
             <sfcwidth>0.020</sfcwidth>
             <sfcfcbReps>15</sfcfcbReps>
-        <MaxGainOffset>3</MaxGainOffset>
+            <MaxGainOffset>3</MaxGainOffset>
         </Rx>
         <Tx>
             <VerifyNumberPCLs>1</VerifyNumberPCLs>
@@ -157,7 +157,7 @@
             <Slope>
                 <Low>3</Low>
                 <Mid>7</Mid>
-                <High>30</High>
+                <High>35</High>
             </Slope>
             <AFCAdjARFCNPCL>
                 <GSM900>
@@ -207,7 +207,7 @@
             <LowGainLevel>-32</LowGainLevel>
             <DisableRdBand1>0</DisableRdBand1>
             <DisableRdBand8>0</DisableRdBand8>
-        <MaxGainOffset>3</MaxGainOffset>
+            <MaxGainOffset>3</MaxGainOffset>
         </RX>
         <TX>
             <Min_OL_Power>-57</Min_OL_Power>

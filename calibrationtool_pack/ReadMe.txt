@@ -6,6 +6,9 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-09-11]V1.27
+1 add notify message when rebooting device
+2 local string for menu title
 [2015-09-10]V1.27
 1 remove band check when rf calibration
 2 set afc default slop from 30 to 35

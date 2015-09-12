@@ -1,0 +1,16 @@
+---------------------------------------------------------
+INPUT ARGUMENTS:
+SIGN_load_signmod_dll
+ATAT_load_ipicom_dll
+ATAT_load_ipcs_dll
+sec_provision.exe: 1.3.0.2
+  ATAT_get_dll_version
+libipcs.dll: 0.0.0
+    IPICOM.dll: 4.28
+  SIGN_get_dll_version
+signing_module.dll: 6.0.2.0
+Library unloaded: "signing_module.dll".
+ATAT_close_interface
+Library unloaded: "IPICOM.dll".
+Library unloaded: "libipcs.dll".
+---------------------------------------------------------

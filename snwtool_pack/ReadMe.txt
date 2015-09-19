@@ -6,6 +6,13 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-09-15]V1.21
+1 Set write imei time out to 25000
+2 Only add device when having got gti and at port 
+3 Default gti port
+[2015-09-14]V1.21
+1 add AT or GTI option for writing 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 [2015-09-10]V1.20
 1 fix set mode crash
 2 remove tool_enable when no do mac write

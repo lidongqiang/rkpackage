@@ -1,0 +1,11 @@
+SNWTool log Message
+Time       Message
+----------------------------------------------------------------------------------------------
+15:44:43   TargetDevice()
+15:44:43   language:CN
+15:44:56   ++DlgModDestroyProc()
+15:45:08   IDC_BREBOOT
+15:45:18   ScanDeviceProc exit 2
+15:45:18   deviceScanThread exit
+15:45:18   ~TargetDevice()
+15:45:18   exit 0

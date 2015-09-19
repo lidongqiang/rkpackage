@@ -1,0 +1,12 @@
+SNWTool log Message
+Time       Message
+----------------------------------------------------------------------------------------------
+18:34:47   new (0,g6,a4)
+18:34:57   ++DlgModDestroyProc()
+18:35:13   ScanDeviceProc exit 2
+18:35:13   deviceScanThread exit
+18:35:13   exit 0
+18:35:46   new (0,g6,a4)
+18:35:50   ScanDeviceProc exit 2
+18:35:50   deviceScanThread exit
+18:35:50   exit 0

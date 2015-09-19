@@ -6,6 +6,17 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-09-19]V1.28
+1 fixed save nvm tag fail when reboot 
+2 merge with jb 20150917
+3 update meas cable loss method
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-09-17]V1.27.02
+1 add write imei2 imei1 option
+[2015-09-15]V1.27.01
+2 change store_nvm(cal_prodparm) to store_nvm_sync(cal_prodparm) to ensure nvm save succeffully 
+[2015-09-14]V1.27.01
+1 ui modify
 [2015-09-11]V1.27
 1 add notify message when rebooting device
 2 local string for menu title

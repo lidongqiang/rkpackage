@@ -7,6 +7,10 @@ Tel :13616004136
 ================================================================================
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-09-13] V1.28
+1 DownloadTool.dll ver:5.16.3.38
+2 handle with stopping in the downloading
+3 support to upgrade firmware of larger than 2G
 [2015-09-09] V1.28
 1 handle unexpected exception
 [2015-08-25] V1.28

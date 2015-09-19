@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+  <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+  <title>Calibration Tool Log</title>
+  <script type="text/javascript">
+function toggleElement(szId) {
+  var el = document.getElementById ? document.getElementById(szId) : document.all ? document.all[szId] : null;
+  if (! el) return;
+  el.style.display = el.style.display == "none" ? "block" : "none";
+}
+function showElement(szId) {
+  var el = document.getElementById ? document.getElementById(szId) : document.all ? document.all[szId] : null;
+  if (! el) return;
+  el.style.display = "block";
+}
+function loopForm(form) {
+  for (var i = 0; i < form.elements.length; i++ ) {
+    if (form.elements[i].type == 'checkbox') {
+      var id = 0;
+      var ele = document.getElementById(form.elements[i].value + id);
+      while( ele ) {
+        if(form.elements[i].checked == true) {
+          ele.style.display = "block";
+        } else {
+          ele.style.display = "none";
+        }
+        id++;
+        ele = document.getElementById(form.elements[i].value + id);
+      }
+    }
+  }
+}
+function selectToggle(toggle, form) {
+  var myForm = document.forms[form];
+  for( var i=0; i < myForm.length; i++ ) { 
+    if(toggle) {
+      myForm.elements[i].checked = "checked";
+    } 
+    else {
+      myForm.elements[i].checked = "";
+    }
+  }
+}
+function dimOff() {
+  document.getElementById("darkLayer").style.display = "none";
+}
+function dimOn() {
+  document.getElementById("darkLayer").style.display = "block";
+}
+function onUpdate() {
+  var isIE6 = /msie|MSIE 6/.test(navigator.userAgent);
+  dimOn();
+  if( isIE6 ) {
+    alert('Please click OK to start filtering. This dialog will disappear once filtering is completed');
+  }  
+  loopForm(document.thisForm);
+  dimOff();
+}
+</script>
+<style type="text/css">
+.darkClass
+{
+  background-color: black;
+  filter:alpha(opacity=50); /* IE */
+  opacity: 0.5; /* Safari, Opera */
+  -moz-opacity:0.50; /* FireFox */
+  z-index: 20;
+  height: 100%;
+  width: 100%;
+  background-repeat:no-repeat;
+  background-position:center;
+  position:absolute;
+  top: 0px;
+  left: 0px;
+}
+p{ font-size: 10px; } 
+p.e{ font-size: 12px; font-weight:bold; color:#FF0000; } 
+table
+{
+  border-collapse:collapse;
+  font-size: 10px;
+}
+table, td, th
+{
+  border:1px solid black;
+  font-size: 10px;
+}
+.form { font-size: 9px; }
+th.row1 {
+  width : 15%;
+}
+th.row2 {
+  width : 10000px;
+}
+.fullwidth {
+  width:10000px;
+}
+    .style1
+    {
+        height: 17px;
+    }
+</style>
+</head>
+<body bgcolor="#FFFFFF">
+<div id="darkLayer" class="darkClass" style="display:none"></div>
+<font face="verdana, geneva, arial, sans-serif" size=1>
+
+<!-- Log header -->
+<a href="#" onclick="toggleElement('CalibrationInfo');"><b>Calibration Information</b></a><br>
+<table id="CalibrationInfo" style="display: block;" bgcolor="#E6E6E6" width="100%">
+  <tbody>
+  ${log_header}<tr><td style="color:$1;" width="10000" bgcolor=#E6E6E6>$2</td></tr>${log_header}
+  </tbody>
+</table>
+
+<br>
+<a href="#" onclick="toggleElement('CalibrationSettings');"><b>Log Detail Settings</b></a><br>
+<table id="CalibrationSettings" style="display: none;" bgcolor="#E6E6E6" width="100%">
+<tbody><tr><td>
+<form name="thisForm">
+<input type="checkbox" value="error" CHECKED>Errors<br>
+<input type="checkbox" value="warning" CHECKED>Warnings<br>
+<input type="checkbox" value="calibdata" CHECKED>Calibration Data<br>
+<input type="checkbox" value="measurementresult" CHECKED>Measurement Result<br>
+<input type="checkbox" value="instrumentcomm" CHECKED>Instrument Communication<br>
+<input type="checkbox" value="targetcomm" CHECKED>Target Communication<br>
+<input type="checkbox" value="measurementinfo" CHECKED>Measurement Info<br>
+<input type="checkbox" value="debug" CHECKED>Debug<br>
+<input type="button" value="Update" class="form" onclick="onUpdate();"> 
+Select <a href="javascript:selectToggle(true, 'thisForm');">All</a> | <a href="javascript:selectToggle(false, 'thisForm');">None</a><p>
+</form>
+</td></tr></tbody>
+</table>
+<br>
+
+<!-- Test case messages -->
+${testcase}<a href="#" onclick="toggleElement('$1');"><b>$2</b></a><br>
+<table id="$1" style="display: none;" bgcolor="#E6E6E6" border="0" width="100%">
+  <tbody>
+  <tr><td class="fullwidth">
+${testcase_body}<div id="$3" style="color:$4; display:$5">$6</div>${testcase_body}
+${testcase_body_error}<a name="$3"></a><p style="color:$4; display:$5" class="e">$6</p>${testcase_body_error}
+${testcase_body_timing}<a name="$3" style="color:$4; display:$5">$6</a>${testcase_body_timing}
+  </td></tr>
+  </tbody>
+</table>${testcase}
+
+<hr>
+<!-- Result of calibration -->
+${result}<p><a href="#" onclick="toggleElement('$10');"><b>$11</b></a><br>
+<table id="$10" style="display: block;" bgcolor="#B2B2CC" border="0" width="100%">
+  
+<!-- header -->
+<thead>
+<tr><th class="row1">$10</th><th class="row1">Verdict</th><th class="row1">Time [sec:msec]</th><th class="row2">Message</th></tr>
+</thead>
+
+<!-- body -->
+<tbody>   
+${log_timing}<a href="#$1"; onclick="showElement('$2');">$3</a>${log_timing}
+${log_result}<tr><td bgcolor=#E6E6E6>$1</td><td style="text-align:center;"; bgcolor=#339933>$2</td><td style="text-align:center;" ; bgcolor=#E6E6E6>$3</td><td bgcolor=#E6E6E6>$4</td></tr>${log_result}  
+${log_result_not_run}<tr><td bgcolor=#E6E6E6>$1</td><td style="text-align:center;"; bgcolor=#FF9900>$2</td><td style="text-align:center;" ; bgcolor=#E6E6E6>$3</td><td bgcolor=#E6E6E6>$4</td></tr>${log_result_not_run}  
+${log_result_error}<tr><td bgcolor=#E6E6E6>$1</td><td style="text-align:center;"; bgcolor=#E62E00><a href="#$2" onclick="showElement('$3')">$4</a></td><td style="text-align:center;" ; bgcolor=#E6E6E6>$5</td><td bgcolor=#E6E6E6>$6</td></tr>${log_result_error}  
+</tbody>
+</table><br>
+Total $10 time: $12 [sec:msec]<p>${result}
+
+</body>
+</html>

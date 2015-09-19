@@ -2,11 +2,11 @@
 ; 有关创建 Inno Setup 脚本文件的详细资料请查阅帮助文档！
 
 #define MyAppName "SNWTool"
-#define MyAppVersion "1.20_0911"
+#define MyAppVersion "1.21_0915"
 #define MyAppPublisher "Fuzhou Rockchip Electronics Co., Ltd."
 #define MyAppURL "http://www.rock-chips.com/"
 #define MyAppExeName "SNWTool.exe"
-#define APPPATH    "D:\rkprojs\SNWTool_NEW\bin"
+#define APPPATH    "D:\rkprojs\snwtool\bin"
 [Setup]
 ; 注: AppId的值为单独标识该应用程序。
 ; 不要为其他安装程序使用相同的AppId值。

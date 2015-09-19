@@ -4,35 +4,35 @@
     <Project>XMM6321</Project>
     <Common>
         <Use_IPICOM>6</Use_IPICOM>
-		<CP_Path>DUT/CP:GTICOM</CP_Path>
-        <Use_DedicatedCH>1</Use_DedicatedCH>			
+        <CP_Path>DUT/CP:GTICOM</CP_Path>
+        <Use_DedicatedCH>1</Use_DedicatedCH>
         <RFProductionFlow>1</RFProductionFlow>
         <!-- Do NOT set DUT to NORMAL mode after calibration: 1-Don't set Normal,0-set Normal-->
-        <DontSetNormal>1</DontSetNormal>	
+        <DontSetNormal>1</DontSetNormal>
         <!-- How to read SW build and Version info. 0 - don't read it, 1 - use at+xgendata, 2 - use at@registry -->
-		<GetSWbuildAndLabelVersion>1</GetSWbuildAndLabelVersion>		
-		<SetUTACalibmode>1</SetUTACalibmode>
-		<!-- Read Chip id from NVM -->
-		<ReadChipID>1</ReadChipID>
-        <RFVerification>1</RFVerification>			
+        <GetSWbuildAndLabelVersion>1</GetSWbuildAndLabelVersion>
+        <SetUTACalibmode>1</SetUTACalibmode>
+        <!-- Read Chip id from NVM -->
+        <ReadChipID>1</ReadChipID>
+        <RFVerification>1</RFVerification>
     </Common>
     <Startup>
         <!-- Enable the startup sequence to be executed -->
-        <Execute>1</Execute>
+        <Execute>0</Execute>
         <Item1>at@bmm:UtaModeGet()</Item1>
         <Item2>at@gticom:set_trace_severity(trace_debug)</Item2>
-    </Startup>	
+    </Startup>
     <GSM>
         <Rx>
-		<!---0 = Rx, 1 = Rd, 2 = Rx and Rd -->
+            <!---0 = Rx, 1 = Rd, 2 = Rx and Rd -->
             <DiversityMode>0</DiversityMode>
-			   <Fast>
-                 <Method>1</Method>
-               </Fast>
-			<RxExtraDelay>8</RxExtraDelay>
+            <Fast>
+                <Method>1</Method>
+            </Fast>
+            <RxExtraDelay>8</RxExtraDelay>
         </Rx>
         <Tx>
-	    <DCXOSupport>1</DCXOSupport>    
+            <DCXOSupport>1</DCXOSupport>
             <ReadPAtype>1</ReadPAtype>
             <FreqCompIdx>6</FreqCompIdx>
             <CommonTX>
@@ -111,7 +111,7 @@
                 <Index_12>25</Index_12>
                 <Index_13>30</Index_13>
                 <Index_14>34</Index_14>
-		<Index_15>37</Index_15>
+                <Index_15>37</Index_15>
             </OL_IndexList>
             <FrequencyOpenLoopMode>1</FrequencyOpenLoopMode>
         </Tx>
@@ -124,10 +124,10 @@
             <Band_C>5</Band_C>
             <Band_D>8</Band_D>
         </Common>
-		<Fast>
-          <Method>1</Method>
+        <Fast>
+            <Method>1</Method>
         </Fast>
-		<!---0 = Rx, 1 = Rd, 2 = Rx and Rd -->
+        <!---0 = Rx, 1 = Rd, 2 = Rx and Rd -->
         <RX>
             <RX3GDiversityMode>2</RX3GDiversityMode>
         </RX>
@@ -527,5 +527,5 @@
     		</Category>
     	</CategoryList>
     </Envelope>]]>
-</UserSettings>	
+</UserSettings>
 </Options>

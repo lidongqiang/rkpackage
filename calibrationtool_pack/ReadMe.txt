@@ -6,6 +6,11 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-09-21]V1.29
+1 Sleep 1s after commit nvm data
+2 Add dut log,User can set DUTLOG to 0-3 to enable or disable dut log
+[2015-09-20]V1.29
+1 Add measeure cable loss and save function
 [2015-09-19]V1.28
 1 fixed save nvm tag fail when reboot 
 2 merge with jb 20150917

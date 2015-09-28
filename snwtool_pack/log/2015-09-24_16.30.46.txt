@@ -1,0 +1,35 @@
+snwtool SNWTool V1.21 Sep 24 2015 log Message
+Time       Message
+----------------------------------------------------------------------------------------------
+16:30:46   language:CN
+
+16:30:47   new (0,g18,a19)
+
+16:30:50   ++loadStructData(0x0138B278,632,0x0138B4EC)
+
+16:30:50   --loadStructData():1
+
+16:30:50   ++loadStructData(0x0138A7A8,2764,0x0138B270)
+
+16:30:50   --loadStructData():1
+
+16:30:58   DlgModOpen():33
+
+16:31:02   ComboBox_GetCurSel():4
+
+16:31:26   DlgOptionOpen():55
+
+16:31:26   new (0,g18,a19)
+
+16:31:28   exit 0
+
+16:31:28   ScanDeviceProc exit 2
+
+16:31:28   deviceScanThread exit
+
+16:31:28   ++storeStructData(0x0138b618,280,0x0138b728)
+
+16:31:28   @@CalculateCRC:0x265B
+
+16:31:28   --storeStructData():1
+

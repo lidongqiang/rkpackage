@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "CalibrationTool"
-#define MyAppVersion "1.28_0919"
+#define MyAppVersion "1.29.2_0928"
 #define MyAppPublisher "Rockchip, Inc."
 #define MyAppURL "http://www.rock-chips.com/"
 #define MyAppExeName "CalibrationTool.exe"

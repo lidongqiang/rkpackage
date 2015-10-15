@@ -27,9 +27,36 @@
             <Group1>cal_rf_ue2</Group1>
         </InvalidateNVM>
         <RFProductionFlow>1</RFProductionFlow>
-        <DualPortDiversity>0</DualPortDiversity>
+        <DualPortDiversity>1</DualPortDiversity>
         <TransitionAllowed>1</TransitionAllowed>
         <DisableLteVerif>1</DisableLteVerif>
+    <!-- The delay of polling UTA mode status  -->
+		<Ptestdelay>500</Ptestdelay>	
+        <DoUcalKillBeforePmodeNormal>1</DoUcalKillBeforePmodeNormal>
+        <DoGcalKillBeforePmodeNormal>1</DoGcalKillBeforePmodeNormal>	
+        <RF_Connections>
+        	<PortMappings>
+        		<RFConnectionDescriptorList>
+        			<RFConnectionDescriptor>
+        				<AttTableName>Main</AttTableName>
+        				<TargetPort>Main</TargetPort>
+        				<TargetPortNumber>1</TargetPortNumber>
+        				<TesterPort>A</TesterPort>
+        			</RFConnectionDescriptor>
+        			<RFConnectionDescriptor>
+        				<AttTableName>Main</AttTableName>
+        				<TargetPort>Diversity1</TargetPort>
+        				<TargetPortNumber>2</TargetPortNumber>
+        				<TesterPort>A</TesterPort>
+        			</RFConnectionDescriptor>
+        			<RFConnectionDescriptor>
+        				<AttTableName>Main</AttTableName>
+        				<TargetPortNumber>100</TargetPortNumber>
+        				<TesterPort>B</TesterPort>
+        			</RFConnectionDescriptor>					
+        		</RFConnectionDescriptorList>
+        	</PortMappings>
+        </RF_Connections>	
     </Common>
     <Bridge>
         <Enable>0</Enable>

@@ -11,6 +11,7 @@
         <DontSetNormal>1</DontSetNormal>
         <!-- How to read SW build and Version info. 0 - don't read it, 1 - use at+xgendata, 2 - use at@registry -->
         <GetSWbuildAndLabelVersion>1</GetSWbuildAndLabelVersion>
+        <DontSetNormal>1</DontSetNormal>
         <SetUTACalibmode>1</SetUTACalibmode>
         <!-- Read Chip id from NVM -->
         <ReadChipID>1</ReadChipID>
@@ -131,8 +132,11 @@
         <RX>
             <RX3GDiversityMode>2</RX3GDiversityMode>
         </RX>
+    <TX>
+            <EnableEnvelopeTrackingCalibration>0</EnableEnvelopeTrackingCalibration>
+        </TX>
     </UMTS>
-<UserSettings>
+    <UserSettings>
         <![CDATA[<Envelope>
     	<CategoryList>
     		<Category>

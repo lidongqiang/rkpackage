@@ -6,6 +6,14 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-10-15]V1.30
+1 Add notify message when user doing cableloss measurement
+[2015-10-10]V1.30
+1 Chang cable loss mmeasure method,only measerue eight fix point
+2 In cable loss measurement, popup warning window when cable loss difference between two adjacent frequencies is greater than 0.2dB.
+3 Fix a bug in 2G Tx CV: test always passes even if Tx power is out of limit.
+4 Execute nvm_store_sync only once in whole test, previousely, tool executes nvm_store at the end of each calibration actions: AFC, 2G Rx, 2G Tx, 3G
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 [2015-09-21]V1.29
 1 Sleep 1s after commit nvm data
 2 Add dut log,User can set DUTLOG to 0-3 to enable or disable dut log

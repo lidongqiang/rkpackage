@@ -1,13 +1,54 @@
+[2.0.3]
+DLL:
+1. Add delay of 20ms in 3G Rx calibration between RF tester freq setup and sending DUT command ucal:ucal_rx_calib.
+2. Fix bug: tool crash when calibrating on CMW500
+3. Fix bug: there is no Rx simple CV at the end of 3G fast calibration
+4. Fix bug: there is no failure message when tool fails to get BER info from DUT in GSM RV
+5. Fix bug in 3G Rx cal data storage when fast cal selected
+
+[2.0.2]
+DLL:
+1. Retry in case of 3G Tx FDT failure.
+2. In html log file, user don't need to pressing Update button any more to see selected log message of selected items and all log messages are visible by default.
+3. Print detailed ILPC log data
+
+UI:
+1. User can specifiy loop count and tool will stop loop after specified tests.
+2. Support cable loss measurement on CMU200 on both GSM and WCDMA bands
+3. Integrate statistics tool v1.0.21
+
+[2.0.1]
+DLL:
+1. Do simple Rx CV at the end of 2G&3G calibration when neither standard CV nor standard RV are selected
+2. Do simple Tx/Rx CV at the end of 2G&3G calibration when neither standard CV nor standard RV are selected
+3. Output RFSW version info in log when using GTI port
+4. Restore command at@nvm:store_nvm(...) from change in 2.0.0
+5. Run command at@nvm:wait_nvm_idle() before ucal exit
+6. Add option to disable retry
+7. Notify GUI tool in case of retry
+8. Sync with platform tool v15.32.06
+9. Only measures cable loss on Tx channels and outputs cable loss on defined frequencies
+10. In cable loss measurement, popup warning window when cable loss difference between two adjacent frequencies is greater than 0.2dB.
+11. Fix a bug in 2G Tx CV: test always passes even if Tx power is out of limit.
+12. Read 3G max. target power only once in whole test including CC/FC/CV/RV
+13. Execute nvm_store_sync only once in whole test, previously, tool executes nvm_store at the end of each calibration actions: AFC, 2G Rx, 2G Tx, 3G
+14. Retry in case of calculation failure on 2G&3G Rx calibration result.
+
+UI:
+1. Add option to disable retry
+2. Show retry count
+3. Show prompting window when pressing statistics menu.
+
 [2.0.0]
 DLL:
 1. Remove word 'retry' in DUT connection failure message
-2. Compare selected bands with trget supported bands, if there is no common band, tool reports error
+2. Compare selected bands with target supported bands, if there is no common band, tool reports error
 3. Replace "at@nvm:store_nvm(...)" with "at@nvm:store_nvm_sync(...)" to wait for NVM storage operation complete
 4. Add simple CV after 3G Tx calibration
 5. Increase exp power for 3db at PCL0 while DCS Tx fast calibration
-6. Add parameter "nDelayBeforeConnect" to specify delay time befroe USB connection, for RK tool it should be 0
-7. Remove reading application list from 8960, which will save test time for more than 1 second
-8. Remove 2 useless commands:"ucal_fac_setup(255,0,{0})" and "ucal_fac_start()" after USB connected
+6. Add API parameter "nDelayBeforeConnect" to specify delay time before USB connection, for RK tool it should be 0
+7. Remove reading application list from 8960, which will save test time for more than 1 seconds
+8. Remove 2 useless commands:"ucal_fac_setup(255,0,{0})" and "ucal_fac_start()" in USB connection initialization
 9. No retry in case of RF measurement errors like timeout...
 
 UI:
@@ -17,7 +58,7 @@ UI:
 4. Add channel/PCL entry in config window for cable loss measurement and antenna test
 5. Add cable loss limit entry for cable loss measurement
 6. Add Tx power limit entry for antenna test
-7. In loop test, only the 1st run will reset instrument by setting parameter "bResetInstrument" to true in the 1st run and fasle in following runs, this will save test time for about 1 second
+7. In loop test, only the 1st run will reset instrument by setting parameter "bResetInstrument" to true in the 1st run and false in following runs, this will save test time for about 1 second
 
 [1.9.10]
 DLL:

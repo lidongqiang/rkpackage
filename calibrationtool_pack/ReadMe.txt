@@ -6,6 +6,13 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-10-21]V1.30.01
+1 Add handshake before doing calibration
+2 merge engine dll fix result storage bug
+[2015-10-21]V1.30
+1 Using old method in cableloss measurement
+[2015-10-16]V1.30
+1 Add CMU200 support in cableloss measurement
 [2015-10-15]V1.30
 1 Add notify message when user doing cableloss measurement
 [2015-10-10]V1.30

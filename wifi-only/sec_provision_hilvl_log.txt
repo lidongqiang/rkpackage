@@ -1,14 +1,73 @@
 ---------------------------------------------------------
 INPUT ARGUMENTS:
-SIGN_load_signmod_dll
+COMPORT = 19
+IMEI = 358227051041892
+---------------------------------------------------------
 ATAT_load_ipicom_dll
 ATAT_load_ipcs_dll
-sec_provision.exe: 1.3.0.2
-libipcs.dll: 0.0.0
-    IPICOM.dll: 4.28
-signing_module.dll: 6.0.2.0
-Library unloaded: "signing_module.dll".
+SIGN_load_signmod_dll
+MAIN_load_binfile
+- Read 564 from file E:\rk_work\tools_distr\wifi-only\Sprk2048dev.key.
+ATAT_setup_interface (Comport=19)
+Successfully opened DUT/CP
+ATAT_disable_powersave
+Connection successfully achieved with libipcs.dll
+ATAT_disable_powersave
+ATAT_disable_inputecho
+ATAT_code_verify (Id=3, Length=8, ...)
+ATAT_hw_details
+DATA_format_context (Typ=80434553)
+SIGN_setup_context
+SIGN_make_imei_data_mid
+DATA_insert_block (Typ=00010002, Len=00000154)
+SIGN_make_valid_system_ticket
+DATA_insert_block (Typ=00020000, Len=00000080)
+SIGN_make_system_ticket_def
+DATA_insert_block (Typ=00020001, Len=00000080)
+SIGN_make_system_ticket_def
+DATA_insert_block (Typ=00020002, Len=00000080)
+SIGN_make_system_ticket_def
+DATA_insert_block (Typ=00020003, Len=00000080)
+SIGN_make_simlock_ticket_def
+DATA_insert_block (Typ=00020010, Len=00000080)
+SIGN_make_simlock_ticket_def
+DATA_insert_block (Typ=00020011, Len=00000080)
+SIGN_make_simlock_ticket_def
+DATA_insert_block (Typ=00020012, Len=00000080)
+SIGN_make_simlock_ticket_def
+DATA_insert_block (Typ=00020013, Len=00000080)
+SIGN_make_simlock_ticket_def
+DATA_insert_block (Typ=00020014, Len=00000080)
+SIGN_make_simlock_data_std
+DATA_insert_block (Typ=00030001, Len=000002C0)
+SIGN_delete_context
+ATAT_flash_io (Action=0x10, Block=0x00000000, ...)
+DATA_goto_first
+DATA_read_block (Typ=00010002, Len=00000154)
+ATAT_flash_io (Action=0x20, Block=0x00010002, ...)
+DATA_read_block (Typ=00020000, Len=00000080)
+ATAT_flash_io (Action=0x20, Block=0x00020000, ...)
+DATA_read_block (Typ=00020001, Len=00000080)
+ATAT_flash_io (Action=0x20, Block=0x00020001, ...)
+DATA_read_block (Typ=00020002, Len=00000080)
+ATAT_flash_io (Action=0x20, Block=0x00020002, ...)
+DATA_read_block (Typ=00020003, Len=00000080)
+ATAT_flash_io (Action=0x20, Block=0x00020003, ...)
+DATA_read_block (Typ=00020010, Len=00000080)
+ATAT_flash_io (Action=0x20, Block=0x00020010, ...)
+DATA_read_block (Typ=00020011, Len=00000080)
+ATAT_flash_io (Action=0x20, Block=0x00020011, ...)
+DATA_read_block (Typ=00020012, Len=00000080)
+ATAT_flash_io (Action=0x20, Block=0x00020012, ...)
+DATA_read_block (Typ=00020013, Len=00000080)
+ATAT_flash_io (Action=0x20, Block=0x00020013, ...)
+DATA_read_block (Typ=00020014, Len=00000080)
+ATAT_flash_io (Action=0x20, Block=0x00020014, ...)
+DATA_read_block (Typ=00030001, Len=000002C0)
+ATAT_flash_io (Action=0x20, Block=0x00030001, ...)
+DATA_read_block (Typ=FFFFFFFF, Len=00000000)
+ATAT_flash_io (Action=0x40, Block=0x00000000, ...)
 ATAT_close_interface
 Library unloaded: "IPICOM.dll".
 Library unloaded: "libipcs.dll".
----------------------------------------------------------
+Library unloaded: "signing_module.dll".

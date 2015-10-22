@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Options XML_Version="1.2">
+    <Base>XMM_6260.xml</Base>
+    <Project>XMM6321</Project>
+    <Common>
+        <Use_IPICOM>6</Use_IPICOM>
+        <CP_Path>DUT/CP:GTICOM</CP_Path>
+        <Use_DedicatedCH>1</Use_DedicatedCH>
+        <RFProductionFlow>1</RFProductionFlow>
+        <!-- Do NOT set DUT to NORMAL mode after calibration: 1-Don't set Normal,0-set Normal-->
+        <DontSetNormal>1</DontSetNormal>
+        <!-- How to read SW build and Version info. 0 - don't read it, 1 - use at+xgendata, 2 - use at@registry -->
+        <GetSWbuildAndLabelVersion>2</GetSWbuildAndLabelVersion>
+        <SetUTACalibmode>1</SetUTACalibmode>
+        <!-- Read Chip id from NVM -->
+        <ReadChipID>1</ReadChipID>
+        <RFVerification>1</RFVerification>
+        <InvalidateNVM>
+            <Action>2</Action>
+        </InvalidateNVM>
+        <ResetInstrument>0</ResetInstrument>
+    </Common>
+    <Startup>
+        <!-- Enable the startup sequence to be executed -->
+        <Execute>1</Execute>
+        <Item1>at@gticom:set_trace_severity(trace_debug)</Item1>
+    </Startup>
+    <GSM>
+        <Rx>
+            <!---0 = Rx, 1 = Rd, 2 = Rx and Rd -->
+            <DiversityMode>0</DiversityMode>
+            <Fast>
+                <Method>0</Method>
+            </Fast>
+            <RxExtraDelay>5</RxExtraDelay>
+        </Rx>
+        <Tx>
+            <ReadPAtype>1</ReadPAtype>
+            <FreqCompIdx>6</FreqCompIdx>
+            <CommonTX>
+                <Pedestalcal>1</Pedestalcal>
+                <Fast>
+                    <Method>0</Method>
+                </Fast>
+            </CommonTX>
+            <OL_Channel>
+                <Ch_Index_0>2</Ch_Index_0>
+                <Ch_Index_1>2</Ch_Index_1>
+                <Ch_Index_2>2</Ch_Index_2>
+                <Ch_Index_3>2</Ch_Index_3>
+            </OL_Channel>
+            <Channel>
+                <Ch_Index_0>-1</Ch_Index_0>
+                <Ch_Index_1>0</Ch_Index_1>
+                <Ch_Index_2>4</Ch_Index_2>
+                <Ch_Index_3>-1</Ch_Index_3>
+            </Channel>
+            <Channels>
+                <!-- Frequency sweep -->
+                <Channel_Index_0_0>0</Channel_Index_0_0>
+                <Channel_Index_0_1>1</Channel_Index_0_1>
+                <Channel_Index_0_2>2</Channel_Index_0_2>
+                <Channel_Index_0_3>3</Channel_Index_0_3>
+                <Channel_Index_0_4>4</Channel_Index_0_4>
+                <Channel_Index_1_0>0</Channel_Index_1_0>
+                <Channel_Index_1_1>1</Channel_Index_1_1>
+                <Channel_Index_1_2>2</Channel_Index_1_2>
+                <Channel_Index_1_3>3</Channel_Index_1_3>
+                <Channel_Index_1_4>4</Channel_Index_1_4>
+                <Channel_Index_2_0>0</Channel_Index_2_0>
+                <Channel_Index_2_1>1</Channel_Index_2_1>
+                <Channel_Index_2_2>2</Channel_Index_2_2>
+                <Channel_Index_2_3>3</Channel_Index_2_3>
+                <Channel_Index_2_4>4</Channel_Index_2_4>
+                <Channel_Index_3_0>0</Channel_Index_3_0>
+                <Channel_Index_3_1>1</Channel_Index_3_1>
+                <Channel_Index_3_2>2</Channel_Index_3_2>
+                <Channel_Index_3_3>3</Channel_Index_3_3>
+                <Channel_Index_3_4>4</Channel_Index_3_4>
+            </Channels>
+            <IndexList>
+                <!-- Rampscales -->
+                <Index_1>1</Index_1>
+                <Index_2>2</Index_2>
+                <Index_3>3</Index_3>
+                <Index_4>4</Index_4>
+                <Index_5>5</Index_5>
+                <Index_6>6</Index_6>
+                <Index_7>7</Index_7>
+                <Index_8>8</Index_8>
+                <Index_9>9</Index_9>
+                <Index_10>10</Index_10>
+                <Index_11>11</Index_11>
+                <Index_12>12</Index_12>
+                <Index_13>13</Index_13>
+                <Index_14>14</Index_14>
+                <Index_15>15</Index_15>
+            </IndexList>
+            <OL_IndexList>
+                <!-- Rampscales -->
+                <Index_0>1</Index_0>
+                <Index_1>2</Index_1>
+                <Index_2>3</Index_2>
+                <Index_3>4</Index_3>
+                <Index_4>5</Index_4>
+                <Index_5>6</Index_5>
+                <Index_6>7</Index_6>
+                <Index_7>10</Index_7>
+                <Index_8>12</Index_8>
+                <Index_9>15</Index_9>
+                <Index_10>17</Index_10>
+                <Index_11>20</Index_11>
+                <Index_12>25</Index_12>
+                <Index_13>30</Index_13>
+                <Index_14>34</Index_14>
+                <Index_15>37</Index_15>
+            </OL_IndexList>
+            <FrequencyOpenLoopMode>1</FrequencyOpenLoopMode>
+        </Tx>
+        <Common>
+            <DCS1800>1</DCS1800>
+            <EGSM900>1</EGSM900>
+            <GSM850>1</GSM850>
+            <PCS1900>1</PCS1900>
+        </Common>
+    </GSM>
+    <UMTS>
+        <Common>
+            <Nof_Umts_Bands>4</Nof_Umts_Bands>
+            <Band_A>1</Band_A>
+            <Band_B>2</Band_B>
+            <Band_C>5</Band_C>
+            <Band_D>8</Band_D>
+        </Common>
+        <Fast>
+            <Method>0</Method>
+        </Fast>
+        <!---0 = Rx, 1 = Rd, 2 = Rx and Rd -->
+        <RX>
+            <RX3GDiversityMode>0</RX3GDiversityMode>
+        </RX>
+    </UMTS>
+    <UserSettings>
+        <CategoryList>
+            <Name>CUST_1258.xml</Name>
+            <Category>
+                <Name>Band Selection</Name>
+                <Hint>0</Hint>
+                <GroupList>
+                    <Group>
+                        <Name>2G</Name>
+                        <Constraints>
+                            <MinSelected>2</MinSelected>
+                            <MaxSelected>4</MaxSelected>
+                            <ItemType>bool</ItemType>
+                        </Constraints>
+                        <Destination>
+                            <Path>GSM:Common:</Path>
+                            <SuffixType>id</SuffixType>
+                            <IncrementalSuffix />
+                            <PathCount />
+                            <ValueMapDefault />
+                            <ValueMap />
+                        </Destination>
+                        <ItemList>
+                            <Item>
+                                <ID>GSM850</ID>
+                                <Label>850</Label>
+                                <Description />
+                                <Value>1</Value>
+                                <Selected>1</Selected>
+                            </Item>
+                            <Item>
+                                <ID>EGSM900</ID>
+                                <Label>900</Label>
+                                <Description />
+                                <Value>1</Value>
+                                <Selected>1</Selected>
+                            </Item>
+                            <Item>
+                                <ID>DCS1800</ID>
+                                <Label>1800</Label>
+                                <Description />
+                                <Value>1</Value>
+                                <Selected>1</Selected>
+                            </Item>
+                            <Item>
+                                <ID>PCS1900</ID>
+                                <Label>1900</Label>
+                                <Description />
+                                <Value>1</Value>
+                                <Selected>1</Selected>
+                            </Item>
+                        </ItemList>
+                    </Group>
+                    <Group>
+                        <Name>3G</Name>
+                        <Constraints>
+                            <MinSelected>0</MinSelected>
+                            <MaxSelected>12</MaxSelected>
+                            <ItemType>bool</ItemType>
+                        </Constraints>
+                        <Destination>
+                            <Path>UMTS:Common:Band_</Path>
+                            <SuffixType>incremental</SuffixType>
+                            <IncrementalSuffix>A</IncrementalSuffix>
+                            <PathCount>UMTS:Common:Nof_Umts_Bands</PathCount>
+                            <ValueMapDefault />
+                            <ValueMap />
+                        </Destination>
+                        <ItemList>
+                            <Item>
+                                <ID />
+                                <Label>B1</Label>
+                                <Description />
+                                <Value>1</Value>
+                                <Selected>1</Selected>
+                            </Item>
+                            <Item>
+                                <ID />
+                                <Label>B2</Label>
+                                <Description />
+                                <Value>2</Value>
+                                <Selected>1</Selected>
+                            </Item>
+                            <Item>
+                                <ID />
+                                <Label>B3</Label>
+                                <Description />
+                                <Value>3</Value>
+                                <Selected>0</Selected>
+                            </Item>
+                            <Item>
+                                <ID />
+                                <Label>B4</Label>
+                                <Description />
+                                <Value>4</Value>
+                                <Selected>0</Selected>
+                            </Item>
+                            <Item>
+                                <ID />
+                                <Label>B5</Label>
+                                <Description />
+                                <Value>5</Value>
+                                <Selected>1</Selected>
+                            </Item>
+                            <Item>
+                                <ID />
+                                <Label>B6</Label>
+                                <Description />
+                                <Value>6</Value>
+                                <Selected>0</Selected>
+                            </Item>
+                            <Item>
+                                <ID />
+                                <Label>B7</Label>
+                                <Description />
+                                <Value>7</Value>
+                                <Selected>0</Selected>
+                            </Item>
+                            <Item>
+                                <ID />
+                                <Label>B8</Label>
+                                <Description />
+                                <Value>8</Value>
+                                <Selected>1</Selected>
+                            </Item>
+                            <Item>
+                                <ID />
+                                <Label>B9</Label>
+                                <Description />
+                                <Value>9</Value>
+                                <Selected>0</Selected>
+                            </Item>
+                            <Item>
+                                <ID />
+                                <Label>B10</Label>
+                                <Description />
+                                <Value>10</Value>
+                                <Selected>0</Selected>
+                            </Item>
+                            <Item>
+                                <ID />
+                                <Label>B11</Label>
+                                <Description />
+                                <Value>11</Value>
+                                <Selected>0</Selected>
+                            </Item>
+                            <Item>
+                                <ID />
+                                <Label>B19</Label>
+                                <Description />
+                                <Value>19</Value>
+                                <Selected>0</Selected>
+                            </Item>
+                        </ItemList>
+                    </Group>
+                </GroupList>
+            </Category>
+            <Category>
+                <Name>Fast Calibration</Name>
+                <Hint>1</Hint>
+                <GroupList>
+                    <Group>
+                        <Name>2G</Name>
+                        <Constraints>
+                            <MinSelected>0</MinSelected>
+                            <MaxSelected>1</MaxSelected>
+                            <ItemType>bool</ItemType>
+                        </Constraints>
+                        <Destination>
+                            <Path>GSM:Tx:CommonTX:Fast:Method</Path>
+                            <SuffixType />
+                            <IncrementalSuffix />
+                            <PathCount />
+                            <ValueMapDefault />
+                            <ValueMap />
+                        </Destination>
+                        <ItemList>
+                            <Item>
+                                <ID />
+                                <Label>2G Fast</Label>
+                                <Description />
+                                <Value>1</Value>
+                                <Selected>0</Selected>
+                            </Item>
+                            <Item>
+                                <ID />
+                                <Label>2G Dynamic</Label>
+                                <Description>Agilent 8960 specific.</Description>
+                                <Value>2</Value>
+                                <Selected>0</Selected>
+                            </Item>
+                        </ItemList>
+                    </Group>
+                    <Group>
+                        <Name>3G</Name>
+                        <Constraints>
+                            <MinSelected>0</MinSelected>
+                            <MaxSelected>1</MaxSelected>
+                            <ItemType>bool</ItemType>
+                        </Constraints>
+                        <Destination>
+                            <Path>UMTS:Fast:Method</Path>
+                            <SuffixType />
+                            <IncrementalSuffix />
+                            <PathCount />
+                            <ValueMapDefault />
+                            <ValueMap />
+                        </Destination>
+                        <ItemList>
+                            <Item>
+                                <ID />
+                                <Label>3G Fast</Label>
+                                <Description />
+                                <Value>1</Value>
+                                <Selected>0</Selected>
+                            </Item>
+                            <Item>
+                                <ID />
+                                <Label>3G Dynamic</Label>
+                                <Description>Agilent 8960 specific.</Description>
+                                <Value>2</Value>
+                                <Selected>0</Selected>
+                            </Item>
+                        </ItemList>
+                    </Group>
+                </GroupList>
+            </Category>
+            <Category>
+                <Name>Diversity</Name>
+                <Hint>1</Hint>
+                <GroupList>
+                    <Group>
+                        <Name>Rx 2G</Name>
+                        <Constraints>
+                            <MinSelected>1</MinSelected>
+                            <MaxSelected>2</MaxSelected>
+                            <ItemType>bool</ItemType>
+                        </Constraints>
+                        <Destination>
+                            <Path>GSM:Rx:DiversityMode</Path>
+                            <SuffixType />
+                            <IncrementalSuffix />
+                            <PathCount />
+                            <ValueMapDefault>3</ValueMapDefault>
+                            <ValueMap>
+                                <Map>
+                                    <Value>0</Value>
+                                    <ItemList>
+                                        <Item>
+                                            <ID>Rx</ID>
+                                            <Value />
+                                            <Selected>0</Selected>
+                                        </Item>
+                                    </ItemList>
+                                </Map>
+                                <Map>
+                                    <Value>1</Value>
+                                    <ItemList>
+                                        <Item>
+                                            <ID>Rd</ID>
+                                            <Value />
+                                            <Selected>0</Selected>
+                                        </Item>
+                                    </ItemList>
+                                </Map>
+                                <Map>
+                                    <Value>2</Value>
+                                    <ItemList>
+                                        <Item>
+                                            <ID>Rx</ID>
+                                            <Value />
+                                            <Selected>0</Selected>
+                                        </Item>
+                                        <Item>
+                                            <ID>Rd</ID>
+                                            <Value />
+                                            <Selected>0</Selected>
+                                        </Item>
+                                    </ItemList>
+                                </Map>
+                            </ValueMap>
+                        </Destination>
+                        <ItemList>
+                            <Item>
+                                <ID>Rx</ID>
+                                <Label>Rx path</Label>
+                                <Description />
+                                <Value />
+                                <Selected>1</Selected>
+                            </Item>
+                            <Item>
+                                <ID>Rd</ID>
+                                <Label>Rd path</Label>
+                                <Description />
+                                <Value />
+                                <Selected>0</Selected>
+                            </Item>
+                        </ItemList>
+                    </Group>
+                    <Group>
+                        <Name>Rx 3G</Name>
+                        <Constraints>
+                            <MinSelected>1</MinSelected>
+                            <MaxSelected>2</MaxSelected>
+                            <ItemType>bool</ItemType>
+                        </Constraints>
+                        <Destination>
+                            <Path>UMTS:RX:RX3GDiversityMode</Path>
+                            <SuffixType />
+                            <IncrementalSuffix />
+                            <PathCount />
+                            <ValueMapDefault>3</ValueMapDefault>
+                            <ValueMap>
+                                <Map>
+                                    <Value>0</Value>
+                                    <ItemList>
+                                        <Item>
+                                            <ID>Rx</ID>
+                                            <Value />
+                                            <Selected>0</Selected>
+                                        </Item>
+                                    </ItemList>
+                                </Map>
+                                <Map>
+                                    <Value>1</Value>
+                                    <ItemList>
+                                        <Item>
+                                            <ID>Rd</ID>
+                                            <Value />
+                                            <Selected>0</Selected>
+                                        </Item>
+                                    </ItemList>
+                                </Map>
+                                <Map>
+                                    <Value>2</Value>
+                                    <ItemList>
+                                        <Item>
+                                            <ID>Rx</ID>
+                                            <Value />
+                                            <Selected>0</Selected>
+                                        </Item>
+                                        <Item>
+                                            <ID>Rd</ID>
+                                            <Value />
+                                            <Selected>0</Selected>
+                                        </Item>
+                                    </ItemList>
+                                </Map>
+                            </ValueMap>
+                        </Destination>
+                        <ItemList>
+                            <Item>
+                                <ID>Rx</ID>
+                                <Label>Rx path</Label>
+                                <Description />
+                                <Value />
+                                <Selected>1</Selected>
+                            </Item>
+                            <Item>
+                                <ID>Rd</ID>
+                                <Label>Rd path</Label>
+                                <Description />
+                                <Value />
+                                <Selected>0</Selected>
+                            </Item>
+                        </ItemList>
+                    </Group>
+                </GroupList>
+            </Category>
+            <Category>
+                <Name>Miscelaneous</Name>
+                <Hint>1</Hint>
+                <GroupList>
+                    <Group>
+                        <Name>GTI</Name>
+                        <Constraints>
+                            <MinSelected>0</MinSelected>
+                            <MaxSelected>1</MaxSelected>
+                            <ItemType>bool</ItemType>
+                        </Constraints>
+                        <Destination>
+                            <Path>Common:Use_DedicatedCH</Path>
+                            <SuffixType />
+                            <IncrementalSuffix />
+                            <PathCount />
+                            <ValueMapDefault />
+                            <ValueMap />
+                        </Destination>
+                        <ItemList>
+                            <Item>
+                                <ID />
+                                <Label>Enable dedicated channel</Label>
+                                <Description>Enables use of dedicated GTI channel for DUT communications.</Description>
+                                <Value>1</Value>
+                                <Selected>1</Selected>
+                            </Item>
+                        </ItemList>
+                    </Group>
+                    <Group>
+                        <Name>NVM Mismatch</Name>
+                        <Constraints>
+                            <MinSelected>1</MinSelected>
+                            <MaxSelected>1</MaxSelected>
+                            <ItemType>bool</ItemType>
+                        </Constraints>
+                        <Destination>
+                            <Path>Common:InvalidateNVM:Action</Path>
+                            <SuffixType />
+                            <IncrementalSuffix />
+                            <PathCount />
+                            <ValueMapDefault>2</ValueMapDefault>
+                            <ValueMap>
+                                <Map>
+                                    <Value>1</Value>
+                                    <ItemList>
+                                        <Item>
+                                            <ID>Ignore</ID>
+                                            <Value />
+                                            <Selected>0</Selected>
+                                        </Item>
+                                    </ItemList>
+                                </Map>
+                                <Map>
+                                    <Value>2</Value>
+                                    <ItemList>
+                                        <Item>
+                                            <ID>Abort</ID>
+                                            <Value />
+                                            <Selected>0</Selected>
+                                        </Item>
+                                    </ItemList>
+                                </Map>
+                                <Map>
+                                    <Value>3</Value>
+                                    <ItemList>
+                                        <Item>
+                                            <ID>Invalidate</ID>
+                                            <Value />
+                                            <Selected>0</Selected>
+                                        </Item>
+                                    </ItemList>
+                                </Map>
+                                <Map>
+                                    <Value>4</Value>
+                                    <ItemList>
+                                        <Item>
+                                            <ID>InvalidateAlways</ID>
+                                            <Value />
+                                            <Selected>0</Selected>
+                                        </Item>
+                                    </ItemList>
+                                </Map>
+                            </ValueMap>
+                        </Destination>
+                        <ItemList>
+                            <Item>
+                                <ID>Ignore</ID>
+                                <Label>Ignore</Label>
+                                <Description>Ignore NVM mismatch</Description>
+                                <Value />
+                                <Selected>0</Selected>
+                            </Item>
+                            <Item>
+                                <ID>Abort</ID>
+                                <Label>Abort</Label>
+                                <Description>Abort on NVM mismatch</Description>
+                                <Value />
+                                <Selected>1</Selected>
+                            </Item>
+                            <Item>
+                                <ID>Invalidate</ID>
+                                <Label>Invalidate</Label>
+                                <Description>Invalidate on NVM mismatch</Description>
+                                <Value />
+                                <Selected>0</Selected>
+                            </Item>
+                            <Item>
+                                <ID>InvalidateAlways</ID>
+                                <Label>Invalidate Always</Label>
+                                <Description>Always invalidate NVM</Description>
+                                <Value />
+                                <Selected>0</Selected>
+                            </Item>
+                        </ItemList>
+                    </Group>
+                    <Group>
+                        <Name>Ptest mode command type</Name>
+                        <Constraints>
+                            <MinSelected>0</MinSelected>
+                            <MaxSelected>1</MaxSelected>
+                            <ItemType>bool</ItemType>
+                        </Constraints>
+                        <Destination>
+                            <Path>Common:SetUTACalibmode</Path>
+                            <SuffixType />
+                            <IncrementalSuffix />
+                            <PathCount />
+                            <ValueMapDefault />
+                            <ValueMap />
+                        </Destination>
+                        <ItemList>
+                            <Item>
+                                <ID />
+                                <Label>Use BMM ptest mode command</Label>
+                                <Description>This flag enables BMM ptest mode command</Description>
+                                <Value>1</Value>
+                                <Selected>0</Selected>
+                            </Item>
+                        </ItemList>
+                    </Group>
+                    <Group>
+                        <Name>Mode after calibration</Name>
+                        <Constraints>
+                            <MinSelected>0</MinSelected>
+                            <MaxSelected>1</MaxSelected>
+                            <ItemType>bool</ItemType>
+                        </Constraints>
+                        <Destination>
+                            <Path>Common:DontSetNormal</Path>
+                            <SuffixType />
+                            <IncrementalSuffix />
+                            <PathCount />
+                            <ValueMapDefault />
+                            <ValueMap />
+                        </Destination>
+                        <ItemList>
+                            <Item>
+                                <ID />
+                                <Label>Keep DUT in test mode after calibration</Label>
+                                <Description>Keep DUT in test mode after calibration</Description>
+                                <Value>1</Value>
+                                <Selected>1</Selected>
+                            </Item>
+                        </ItemList>
+                    </Group>
+                    <Group>
+                        <Name>Instrument</Name>
+                        <Constraints>
+                            <MinSelected>0</MinSelected>
+                            <MaxSelected>1</MaxSelected>
+                            <ItemType>bool</ItemType>
+                        </Constraints>
+                        <Destination>
+                            <Path>Common:ResetInstrument</Path>
+                            <SuffixType />
+                            <IncrementalSuffix />
+                            <PathCount />
+                            <ValueMapDefault />
+                            <ValueMap />
+                        </Destination>
+                        <ItemList>
+                            <Item>
+                                <ID />
+                                <Label>Reset instrument on scan</Label>
+                                <Description>Performs instrument reset on initialize stage.</Description>
+                                <Value>1</Value>
+                                <Selected>0</Selected>
+                            </Item>
+                        </ItemList>
+                    </Group>
+                </GroupList>
+            </Category>
+        </CategoryList>
+    </UserSettings>
+</Options>

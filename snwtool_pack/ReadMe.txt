@@ -6,6 +6,10 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-10-28]V1.21.2
+1 fix check cp service when dut in calibration mode
+[2015-10-20]V1.21.1
+1 send enable ipcsd when dut in normal mode 
 [2015-09-15]V1.21
 1 Set write imei time out to 25000
 2 Only add device when having got gti and at port 

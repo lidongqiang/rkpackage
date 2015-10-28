@@ -2,7 +2,7 @@
 ; 有关创建 Inno Setup 脚本文件的详细资料请查阅帮助文档！
 
 #define MyAppName "SNWTool"
-#define MyAppVersion "1.21.1_1020"
+#define MyAppVersion "1.21.2_1028"
 #define MyAppPublisher "Fuzhou Rockchip Electronics Co., Ltd."
 #define MyAppURL "http://www.rock-chips.com/"
 #define MyAppExeName "SNWTool.exe"
@@ -40,7 +40,7 @@ Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescrip
 Source: "{#APPPATH}\SNWTool.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#APPPATH}\cn.dll"; DestDir: "{app}"; Flags: ignoreversion
 ;Source: "{#APPPATH}\conf.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#APPPATH}\ReadMe.txt"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "{#APPPATH}\ReadMe.txt"; DestDir: "{app}"; Flags: ignoreversionSource: "ReadMe.txt"; DestDir: "{app}"; Flags: ignoreversion
 ;Source: "config.bin"; DestDir: "{app}"; Flags: ignoreversion
 Source: "config_cn.bin"   ; DestDir: "{app}"; Flags: ignoreversion onlyifdoesntexist; Languages: chinesesimp ;DestName: "config.bin"
 Source: "config_en.bin"   ; DestDir: "{app}"; Flags: ignoreversion onlyifdoesntexist; Languages: english ;DestName: "config.bin"

@@ -6,6 +6,9 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-10-23]V1.30.02
+1 fix at port detect fail in xp 
+2 merge with Intel_Product_Line_RF_Tool_v2.0.4_RC2.exe
 [2015-10-21]V1.30.01
 1 Add handshake before doing calibration
 2 merge engine dll fix result storage bug

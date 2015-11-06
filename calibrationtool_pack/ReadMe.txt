@@ -6,6 +6,8 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-11-05]V1.31
+1 EngineDll/ReleaseNotes.txt
 [2015-10-23]V1.30.02
 1 fix at port detect fail in xp 
 2 merge with Intel_Product_Line_RF_Tool_v2.0.4_RC2.exe

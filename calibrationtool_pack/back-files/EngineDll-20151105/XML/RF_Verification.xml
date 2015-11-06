@@ -135,9 +135,7 @@
             <Nof_Umts_Bands>5</Nof_Umts_Bands>
             <fspeeddelay>200</fspeeddelay>
             <UseSolicitedResponse>0</UseSolicitedResponse>
-            <SyncwindowtimeMs>3000</SyncwindowtimeMs>
-        <LMTDelay>150</LMTDelay>
-			<BERReceiveTMO>11500</BERReceiveTMO>
+            <SyncwindowtimeMs>2000</SyncwindowtimeMs>
         </Common>
         <RFVSimpleSummary>1</RFVSimpleSummary>
         <DisableExtLog_limitcheck>0</DisableExtLog_limitcheck>
@@ -160,29 +158,29 @@
                 <SyncLevel_0>-60.0</SyncLevel_0>
                 <BERLevel_0>-102</BERLevel_0>
                 <BERLevel_RMC384_0>-102</BERLevel_RMC384_0>
-                <ILPCLevel_0>-60.0</ILPCLevel_0>
+                <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_1>
             <Band_div_1>
                 <Channel_0>10700</Channel_0>
                 <SyncLevel_0>-75.0</SyncLevel_0>
                 <BERLevel_0>-106</BERLevel_0>
                 <BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
-                <ILPCLevel_0>-60.0</ILPCLevel_0>
+                <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_div_1>
             <!-- band 2-->
             <Band_2>
-                <Channel_0>9925</Channel_0>
+                <Channel_0>9800</Channel_0>
                 <SyncLevel_0>-60.0</SyncLevel_0>
                 <BERLevel_0>-102</BERLevel_0>
                 <BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
-                <ILPCLevel_0>-60.0</ILPCLevel_0>
+                <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_2>
             <Band_div_2>
-                <Channel_0>9925</Channel_0>
+                <Channel_0>9800</Channel_0>
                 <SyncLevel_0>-75.0</SyncLevel_0>
-                <BERLevel_0>-102</BERLevel_0>
+                <BERLevel_0>-100</BERLevel_0>
                 <BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
-                <ILPCLevel_0>-60.0</ILPCLevel_0>
+                <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_div_2>
             <!-- band 3-->
             <Band_3>
@@ -190,57 +188,57 @@
                 <SyncLevel_0>-75.0</SyncLevel_0>
                 <BERLevel_0>-104</BERLevel_0>
                 <BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
-                <ILPCLevel_0>-60.0</ILPCLevel_0>
+                <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_3>
             <Band_div_3>
                 <Channel_0>1337</Channel_0>
                 <SyncLevel_0>-75.0</SyncLevel_0>
                 <BERLevel_0>-106</BERLevel_0>
                 <BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
-                <ILPCLevel_0>-60.0</ILPCLevel_0>
+                <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_div_3>
             <!-- band 4-->
             <Band_4>
                 <Channel_0>1640</Channel_0>
                 <SyncLevel_0>-75.0</SyncLevel_0>
-                <BERLevel_0>-102</BERLevel_0>
+                <BERLevel_0>-104</BERLevel_0>
                 <BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
-                <ILPCLevel_0>-60.0</ILPCLevel_0>
+                <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_4>
             <Band_div_4>
                 <Channel_0>1640</Channel_0>
                 <SyncLevel_0>-75.0</SyncLevel_0>
-                <BERLevel_0>-102</BERLevel_0>
+                <BERLevel_0>-106</BERLevel_0>
                 <BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
-                <ILPCLevel_0>-60.0</ILPCLevel_0>
+                <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_div_4>
             <!-- band 5-->
             <Band_5>
-                <Channel_0>4450</Channel_0>
+                <Channel_0>4407</Channel_0>
                 <SyncLevel_0>-60.0</SyncLevel_0>
                 <BERLevel_0>-102</BERLevel_0>
                 <BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
-                <ILPCLevel_0>-60.0</ILPCLevel_0>
+                <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_5>
             <Band_div_5>
-                <Channel_0>4450</Channel_0>
+                <Channel_0>4407</Channel_0>
                 <SyncLevel_0>-60.0</SyncLevel_0>
                 <BERLevel_0>-100</BERLevel_0>
                 <BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
-                <ILPCLevel_0>-60.0</ILPCLevel_0>
+                <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_div_5>
             <!-- band 6-->
             <Band_6>
                 <Channel_0>4400</Channel_0>
                 <SyncLevel_0>-75.0</SyncLevel_0>
                 <BERLevel_0>-104.0</BERLevel_0>
-                <ILPCLevel_0>-60.0</ILPCLevel_0>
+                <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_6>
             <Band_div_6>
                 <Channel_0>4400</Channel_0>
                 <SyncLevel_0>-75.0</SyncLevel_0>
                 <BERLevel_0>-106.0</BERLevel_0>
-                <ILPCLevel_0>-60.0</ILPCLevel_0>
+                <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_div_6>
             <!-- band 8-->
             <Band_8>
@@ -248,14 +246,14 @@
                 <SyncLevel_0>-60.0</SyncLevel_0>
                 <BERLevel_0>-102</BERLevel_0>
                 <BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
-                <ILPCLevel_0>-60.0</ILPCLevel_0>
+                <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_8>
             <Band_div_8>
                 <Channel_0>2937</Channel_0>
                 <SyncLevel_0>-75.0</SyncLevel_0>
                 <BERLevel_0>-106</BERLevel_0>
                 <BERLevel_RMC384_0>-90</BERLevel_RMC384_0>
-                <ILPCLevel_0>-60.0</ILPCLevel_0>
+                <ILPCLevel_0>-75.0</ILPCLevel_0>
             </Band_div_8>
             <!-- band 9-->
             <Band_9>
@@ -323,7 +321,6 @@
             <Do_ILPC>1</Do_ILPC>
             <ILPClimit_max>0.6</ILPClimit_max>
             <ILPClimit_min>-0.6</ILPClimit_min>
-        <MinTxPowerLimit_max>-50</MinTxPowerLimit_max>
         </Tx>
         <TDSTx>
             <OBWlimit_max>1.6</OBWlimit_max>

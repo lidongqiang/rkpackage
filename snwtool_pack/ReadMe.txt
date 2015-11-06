@@ -6,6 +6,8 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-11-02]V1.21.3
+1 fix send command(enable ipcd)when DUT is not in ptest mode instead in normal mode
 [2015-10-28]V1.21.2
 1 fix check cp service when dut in calibration mode
 [2015-10-20]V1.21.1

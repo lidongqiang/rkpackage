@@ -57,7 +57,6 @@
         		</RFConnectionDescriptorList>
         	</PortMappings>
         </RF_Connections>	
-    <ForceSimpleCV>0</ForceSimpleCV>
     </Common>
     <Bridge>
         <Enable>0</Enable>
@@ -185,7 +184,7 @@
             <Slope>
                 <Low>3</Low>
                 <Mid>7</Mid>
-                <High>30</High>
+                <High>35</High>
             </Slope>
             <AFCAdjARFCNPCL>
                 <GSM900>
@@ -245,7 +244,7 @@
             <VerificationLimit>1.0</VerificationLimit>
             <RelaxedVerificationLimit>2.0</RelaxedVerificationLimit>
             <VerificationLimitMax>1.5</VerificationLimitMax>
-            <VerificationLimitLowLevels>1.8</VerificationLimitLowLevels>
+            <VerificationLimitLowLevels>2.3</VerificationLimitLowLevels>
             <VerificationLimitLowLevelsThreshold>5</VerificationLimitLowLevelsThreshold>
             <UE2_OL_POWER_TOL>10</UE2_OL_POWER_TOL>
             <UE2_OL_POWER_MAX>6</UE2_OL_POWER_MAX>

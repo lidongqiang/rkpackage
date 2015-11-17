@@ -6,6 +6,12 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-11-17]V1.31.03
+1 optimizing statistic 
+2 use new measure cable loss method
+3 add option "stop if fail" when doing stress test
+[2015-11-11]V1.31.02
+1 add log statistic tool 
 [2015-11-11]V1.31.01
 [2015-11-05]V1.31
 1 EngineDll/ReleaseNotes.txt

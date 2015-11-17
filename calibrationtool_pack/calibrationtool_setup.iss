@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "CalibrationTool"
-#define MyAppVersion "1.31.01"
+#define MyAppVersion "1.31.03_1117"
 #define MyAppPublisher "Rockchip, Inc."
 #define MyAppURL "http://www.rock-chips.com/"
 #define MyAppExeName "CalibrationTool.exe"
@@ -61,6 +61,7 @@ Source: "xmlconfig.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Language\*"; DestDir: "{app}\Language"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\gtidriver\Driver\*"; DestDir: "{app}\Driver"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "EngineDll\*"; DestDir: "{app}\EngineDll"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "RFTestStatisticsTool\*"; DestDir: "{app}\RFTestStatisticsTool"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]

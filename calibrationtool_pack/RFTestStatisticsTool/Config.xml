@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Config>
+<LogFolder>C:\Jingbo\Tool\Log\Log_Weibu_FC_CV_RV_20150901</LogFolder>
+<StatisticsFileType>0</StatisticsFileType>
+<AutoOpenLog>1</AutoOpenLog>
+<CopyHtmlFile>0</CopyHtmlFile>
+<DetectRetry>0</DetectRetry>
+<CopyRetryPassLog>0</CopyRetryPassLog>
+<FolderCopyRPL></FolderCopyRPL>
+<CopyRetryFailLog>0</CopyRetryFailLog>
+<FolderCopyRFL></FolderCopyRFL>
+<TimeLimit>0</TimeLimit>
+<StartTime>10/26/2015 13:08:14</StartTime>
+<EndTime>10/26/2015 13:08:14</EndTime>
+<CopyAllLog>0</CopyAllLog>
+<FolderCAL></FolderCAL>
+<CopyFailLog>0</CopyFailLog>
+<FolderCFL></FolderCFL>
+<CopyPassLog>0</CopyPassLog>
+<FolderCPL></FolderCPL>
+<RegexMatch>0</RegexMatch>
+<Regex></Regex>
+<RegexMatchType>2</RegexMatchType>
+<CopyRML>0</CopyRML>
+<FolderCML></FolderCML>
+</Config>

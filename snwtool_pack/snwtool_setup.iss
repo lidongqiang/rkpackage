@@ -2,7 +2,7 @@
 ; 有关创建 Inno Setup 脚本文件的详细资料请查阅帮助文档！
 
 #define MyAppName "SNWTool"
-#define MyAppVersion "1.21.4_1110"
+#define MyAppVersion "1.21.5_1130"
 #define MyAppPublisher "Fuzhou Rockchip Electronics Co., Ltd."
 #define MyAppURL "http://www.rock-chips.com/"
 #define MyAppExeName "SNWTool.exe"
@@ -56,7 +56,8 @@ Source: "ReadMe.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Sprk2048dev.key"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Sprk2048dev_unfuse.key"; DestDir: "{app}"; Flags: ignoreversion
 Source: "unlockcodes.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "SNWTool使用指南 - V1.0.3.pdf"; DestDir: "{app}"; Flags: ignoreversion
+Source: "SNWTool使用指南.pdf"; DestDir: "{app}"; Flags: ignoreversion; Languages: chinesesimp
+Source: "SNWTool User Guide.pdf"; DestDir: "{app}"; Flags: ignoreversion; Languages: english
 Source: "..\gtidriver\Driver\*"; DestDir: "{app}\Driver"; Flags: ignoreversion recursesubdirs createallsubdirs
 ;Source: "D:\rock-chips\InnoSetup\SNWTool\WMC_imc1_v4.24.0\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; 注意: 不要在任何共享系统文件上使用“Flags: ignoreversion”

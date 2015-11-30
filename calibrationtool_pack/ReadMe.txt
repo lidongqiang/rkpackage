@@ -6,6 +6,9 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-11-17]V1.31.04
+1 Measure ACLR in 3G simple CV
+2 Add 2 fixed freq points: 1910MHz and 1920MHz and remove 2500MHz
 [2015-11-17]V1.31.03
 1 optimizing statistic 
 2 use new measure cable loss method

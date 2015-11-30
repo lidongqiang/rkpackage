@@ -1,3 +1,16 @@
+[2.0.6]
+UI:
+1. Start STT tool if STT is not running when starting to catch STT log.
+2. Add 2 fixed freq points: 1910MHz and 1920MHz and remove 2500MHz
+3. Donlt start test if tool is run as administrator when choosing to catch STT log
+4. Don't detect OCT port any more when catching STT log
+5. In loop test, tool remembers COM port used in last test and only wait for it in next test.
+6. User can config USB detection timeout, time interval between bettery and charger, time between two tests in loop mode.
+7. Measure ACLR in 3G simple CV
+
+Cable loss measurement DLL:
+1. Add 2 fixed freq points: 1910MHz and 1920MHz and remove 2500MHz
+
 [2.0.5]
 Test Engilne DLL:
 1. Optimize simple CV to shorten test time:

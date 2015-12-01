@@ -6,6 +6,10 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-12-01]V1.22.1
+1 add "read" option for read imei/mac/sn from connected devices
+2 add battery check option
+3 fix imei write error when without authority access to disk 
 [2015-11-02]V1.21.3
 1 fix send command(enable ipcd)when DUT is not in ptest mode instead in normal mode
 [2015-10-28]V1.21.2

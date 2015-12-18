@@ -6,6 +6,12 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2015-12-15]V1.23
+1 supported sql2008/2005 database access when getting write item(sn,mac,imei) 
+[2015-12-09]V1.22.2
+1 add read memory information function
+2 add do recovery after writing pass
+3 add config.ini
 [2015-12-01]V1.22.1
 1 add "read" option for read imei/mac/sn from connected devices
 2 add battery check option

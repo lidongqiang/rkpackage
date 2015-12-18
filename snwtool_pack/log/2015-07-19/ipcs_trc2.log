@@ -1,5 +1,0 @@
-timestamp	severity	group	trace
-21:12:34.859	debug	ipicom_nwl	"sapn_set_node_name: SNWTool"
-21:12:34.859	debug	ipicom_nwl	"sapn_set_node_name: UniqId: 23195"
-21:12:34.859	debug	ipicom_nwl	"sapn_set_node_name: Got route-item"
-21:12:34.859	debug	ipicom_nwl	"sapn_set_node_name: UniqId set in local_route struct"

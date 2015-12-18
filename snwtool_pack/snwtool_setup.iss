@@ -2,7 +2,7 @@
 ; 有关创建 Inno Setup 脚本文件的详细资料请查阅帮助文档！
 
 #define MyAppName "SNWTool"
-#define MyAppVersion "1.22.1_1201"
+#define MyAppVersion "1.23_1215"
 #define MyAppPublisher "Fuzhou Rockchip Electronics Co., Ltd."
 #define MyAppURL "http://www.rock-chips.com/"
 #define MyAppExeName "SNWTool.exe"
@@ -44,6 +44,7 @@ Source: "{#APPPATH}\cn.dll"; DestDir: "{app}"; Flags: ignoreversion
 ;Source: "config.bin"; DestDir: "{app}"; Flags: ignoreversion
 Source: "config_cn.bin"   ; DestDir: "{app}"; Flags: ignoreversion onlyifdoesntexist; Languages: chinesesimp ;DestName: "config.bin"
 Source: "config_en.bin"   ; DestDir: "{app}"; Flags: ignoreversion onlyifdoesntexist; Languages: english ;DestName: "config.bin"
+Source: "config.ini"      ; DestDir: "{app}"; Flags: ignoreversion onlyifdoesntexist; DestName: "config.ini"
 Source: "1.ini"   ; DestDir: "{app}"; Flags: ignoreversion ;
 Source: "2.ini"   ; DestDir: "{app}"; Flags: ignoreversion ;
 Source: "autoinfo.bin"; DestDir: "{app}"; Flags: ignoreversion

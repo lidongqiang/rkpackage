@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "FactoryTool"
-#define MyAppVersion "1.28.02_1214"
+#define MyAppVersion "1.29.01_nvmbackup_0104"
 #define MyAppPublisher "Rockchip, Inc."
 #define MyAppURL "http://www.rock-chips.com/"
 #define MyAppExeName "FactoryTool.exe"
@@ -42,11 +42,12 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Source: "DownloadTool.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "FactoryTool.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "简要使用说明.pdf"; DestDir: "{app}"; Flags: ignoreversion
-Source: "Language\*"; DestDir: "{app}\Language"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "Lan\*"; DestDir: "{app}\Lan"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "FlashUSB_Driver\*"; DestDir: "{app}\FlashUSB_Driver"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "TraceViewer.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "TraceViewer.ini"; DestDir: "{app}"; Flags: ignoreversion
 Source: "TraceViewer.ddf"; DestDir: "{app}"; Flags: ignoreversion
+Source: "FlsTool.exe"    ; DestDir: "{app}"; Flags: ignoreversion
 Source: "ReadMe.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "config_cn.ini"   ; DestDir: "{app}"; Flags: ignoreversion onlyifdoesntexist; Languages: cn ;DestName: "config.ini"
 Source: "config_en.ini"   ; DestDir: "{app}"; Flags: ignoreversion onlyifdoesntexist; Languages: en ;DestName: "config.ini"

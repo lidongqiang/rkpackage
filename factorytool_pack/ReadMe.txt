@@ -7,6 +7,9 @@ Tel :13616004136
 ================================================================================
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2016-01-20]
+1 Add nvm backup option
+2 fix error when fls path with space 
 [2015-09-13] V1.28
 1 DownloadTool.dll ver:5.16.3.38
 2 handle with stopping in the downloading

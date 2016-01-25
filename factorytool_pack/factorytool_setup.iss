@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "FactoryTool"
-#define MyAppVersion "1.29.02_nvmbackup_0104"
+#define MyAppVersion "1.29.02_bainengda_0125"
 #define MyAppPublisher "Rockchip, Inc."
 #define MyAppURL "http://www.rock-chips.com/"
 #define MyAppExeName "FactoryTool.exe"

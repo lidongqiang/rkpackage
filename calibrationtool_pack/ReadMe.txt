@@ -6,6 +6,10 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2016-01-25]V1.33
+1 add device type select menu 
+2.1 Fix bug: in 3G cal, integrator of middle band will be cleared when band configuration are: middle 3G bands + low 3G bands 
+2.2 Fix bug: in 3G cal, integrator of high bands will be cleared when no low or middle 3G band selected 
 [2015-12-23]V1.31.04
 1 Add option to do 3G AFC on Agilent8960/CMU200
 [2015-11-17]V1.31.04

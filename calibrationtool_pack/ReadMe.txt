@@ -10,6 +10,8 @@ Tel :13616004136
 1 add device type select menu 
 2.1 Fix bug: in 3G cal, integrator of middle band will be cleared when band configuration are: middle 3G bands + low 3G bands 
 2.2 Fix bug: in 3G cal, integrator of high bands will be cleared when no low or middle 3G band selected 
+3 add read sw info before calibration
+4 set timeout 2500 before connect socket pipe deb
 [2015-12-23]V1.31.04
 1 Add option to do 3G AFC on Agilent8960/CMU200
 [2015-11-17]V1.31.04

@@ -6,6 +6,8 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2016-03-21]V1.33.02
+1 add DefImei1=865717020000322&DefImei2=865717020000348 int config.ini for writing configurable default imei
 [2016-01-25]V1.33
 1 add device type select menu 
 2.1 Fix bug: in 3G cal, integrator of middle band will be cleared when band configuration are: middle 3G bands + low 3G bands 

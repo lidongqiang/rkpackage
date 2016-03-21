@@ -2,7 +2,7 @@
 ; 有关创建 Inno Setup 脚本文件的详细资料请查阅帮助文档！
 
 #define MyAppName "SNWTool"
-#define MyAppVersion "1.23.02_1222"
+#define MyAppVersion "1.24_0303"
 #define MyAppPublisher "Fuzhou Rockchip Electronics Co., Ltd."
 #define MyAppURL "http://www.rock-chips.com/"
 #define MyAppExeName "SNWTool.exe"
@@ -56,6 +56,7 @@ Source: "signing_module.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "ReadMe.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Sprk2048dev.key"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Sprk2048dev_unfuse.key"; DestDir: "{app}"; Flags: ignoreversion
+Source: "OldSprk2048dev.key"; DestDir: "{app}"; Flags: ignoreversion
 Source: "unlockcodes.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "SNWTool使用指南.pdf"; DestDir: "{app}"; Flags: ignoreversion; Languages: chinesesimp
 Source: "SNWTool User Guide.pdf"; DestDir: "{app}"; Flags: ignoreversion; Languages: english

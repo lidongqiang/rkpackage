@@ -6,6 +6,9 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2016-04-08]V1.24.02
+1 fix sn can not saved in xmm6321 device , add commit operation 
+2 change devid to hwid, use cal_prodparm.cust_parms.param[5:10] to store hwid,hwid must be hexadecimal;
 [2016-03-03]V1.24
 1 support xmm6321 platform 
 [2015-12-15]V1.23

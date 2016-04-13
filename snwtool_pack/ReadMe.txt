@@ -6,6 +6,9 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2016-04-14]V1.25
+1 update libipcs.dll,fix write imei error
+2 write IgnoreHWSerNumXXXXYYYY regiter when open
 [2016-04-08]V1.24.02
 1 fix sn can not saved in xmm6321 device , add commit operation 
 2 change devid to hwid, use cal_prodparm.cust_parms.param[5:10] to store hwid,hwid must be hexadecimal;

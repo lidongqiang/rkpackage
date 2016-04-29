@@ -6,6 +6,13 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2016-04-28]V1.34.01
+1 rollback 20151222
+2 imei auto increase
+[2016-04-27]V1.34.01
+1 for wifi mac,chang globally unique management(plus 4 -> plaus 1)
+2 move all to root dir 
+3 merge with CodePackage_20160321_v2.1.2
 [2016-03-21]V1.33.02
 1 add DefImei1=865717020000322&DefImei2=865717020000348 int config.ini for writing configurable default imei
 [2016-01-25]V1.33

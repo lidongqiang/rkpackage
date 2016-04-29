@@ -2,12 +2,12 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "CalibrationTool"
-#define MyAppVersion "1.33.02_0321"
+#define MyAppVersion "1.34_0429"
 #define MyAppPublisher "Rockchip, Inc."
 #define MyAppURL "http://www.rock-chips.com/"
 #define MyAppExeName "CalibrationTool.exe"
 #define CURDIR  
-#define APPPATH    "D:\rkprojs\Intel_CalibrationTool\bin\"
+#define APPPATH    "D:\rkprojs\Intel_CalibrationTool\bin\"#define ENGINE_DLL "EngineDll"
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
 ; Do not use the same AppId value in installers for other applications.
@@ -42,18 +42,18 @@ en.MyCompany=Rockchip
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "IPICOM.DLL"; DestDir: "{app}"; Flags: ignoreversion
-Source: "sec_provision.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "signing_module.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "Sprk2048dev.key"; DestDir: "{app}"; Flags: ignoreversion
-Source: "OldSprk2048dev.key"; DestDir: "{app}"; Flags: ignoreversion
-Source: "Sprk2048dev_unfuse.key"; DestDir: "{app}"; Flags: ignoreversion
-Source: "unlockcodes.txt"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "IPICOM.DLL"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "sec_provision.exe"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "signing_module.dll"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "Sprk2048dev.key"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "OldSprk2048dev.key"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "Sprk2048dev_unfuse.key"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "unlockcodes.txt"; DestDir: "{app}"; Flags: ignoreversion
 ;Source: "config.ini"; DestDir: "{app}"; Flags: ignoreversion
 Source: "config_cn.ini"   ; DestDir: "{app}"; Flags: ignoreversion onlyifdoesntexist; Languages: cn ;DestName: "config.ini"
 Source: "config_en.ini"   ; DestDir: "{app}"; Flags: ignoreversion onlyifdoesntexist; Languages: en ;DestName: "config.ini"
-Source: "libipcs.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "libipcs_com_plugin.dll"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "libipcs.dll"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "libipcs_com_plugin.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "CalibrationTool.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "校准和综测工具简要使用说明.pdf"; DestDir: "{app}"; Flags: ignoreversion
 Source: "8960固件升级方法.pdf"; DestDir: "{app}"; Flags: ignoreversion
@@ -61,7 +61,8 @@ Source: "ReadMe.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "xmlconfig.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Language\*"; DestDir: "{app}\Language"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\gtidriver\Driver\*"; DestDir: "{app}\Driver"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "EngineDll\*"; DestDir: "{app}\EngineDll"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "EngineDll\*"; DestDir: "{app}\"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "ipcs\*"; DestDir: "{app}\";Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "RFTestStatisticsTool\*"; DestDir: "{app}\RFTestStatisticsTool"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 

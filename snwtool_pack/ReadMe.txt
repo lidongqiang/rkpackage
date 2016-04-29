@@ -6,6 +6,10 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2016-04-27]V1.25.02
+2 UI modifyed
+[2016-04-25]V1.25.02
+1 for wifi mac,chang globally unique management(plus 4 -> plaus 1)
 [2016-04-14]V1.25
 1 update libipcs.dll,fix write imei error
 2 write IgnoreHWSerNumXXXXYYYY regiter when open

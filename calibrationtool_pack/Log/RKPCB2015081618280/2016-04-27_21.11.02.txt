@@ -1,0 +1,6 @@
+DEBUG 1.1.1 Apr 27 2016 log Message
+Time       Message
+----------------------------------------------------------------------------------------------
+21:11:03   Failed to initialize IPCS library!
+21:11:04   Failed to initialize IPCS library!
+21:11:06   Failed to initialize IPCS library!

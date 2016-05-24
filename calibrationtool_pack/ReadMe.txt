@@ -6,6 +6,10 @@ mail:lsh@rock-chips.com
 Tel :13616004136
 ================================================================================
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[2016-05-24]V1.34.05
+1 fix calibration on L devices
+2 fix Undefine Header Warning on 8960
+3 use DISPLAY:MODE FAST command to switch to fast mode
 [2016-05-07]V1.34.04
 1 use dll CodePackage_20160321_v2.1.3_RC1 for afc fail
 [2016-05-03]V1.34.02

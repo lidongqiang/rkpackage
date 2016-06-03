@@ -18,7 +18,7 @@ AppPublisher={cm:MyAppPublisher}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
-DefaultDirName={pf}\{cm:MyCompany}\{cm:MyAppName}
+DefaultDirName=D:\rock-chips\{#MyAppName}
 DefaultGroupName={cm:MyAppName}
 OutputDir=..\out
 OutputBaseFilename=Wvpctool_Setup_V{#MyAppVersion}
@@ -29,10 +29,10 @@ SolidCompression=yes
 Name: cn; MessagesFile: "compiler:Languages\chinesesimp.isl"
 Name: en; MessagesFile: "compiler:Languages\English.isl"
 [CustomMessages]
-cn.MyAppName=WideVine&Fuse工具
+cn.MyAppName=Wvpctool
 cn.MyAppPublisher=瑞芯微电子有限公司
 cn.MyCompany=瑞芯微电子
-en.MyAppName=WideVine&FuseTool
+en.MyAppName=Wvpctool
 en.MyAppPublisher=Rockchip,Inc.
 en.MyCompany=Rockchip
 
@@ -46,7 +46,7 @@ Source: "libipcs_tcpip_plugin.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "wvpctool.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "wvtool使用指南 - V1.0.0.pdf"; DestDir: "{app}"; Flags: ignoreversion
 Source: "ReadMe.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "Lan\*"; DestDir: "{app}\Language"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "Lan\*"; DestDir: "{app}\Lan"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\gtidriver\Driver\*"; DestDir: "{app}\Driver"; Flags: ignoreversion recursesubdirs createallsubdirs
 [Icons]
 Name: "{group}\{cm:MyAppName}"; Filename: "{app}\{#MyAppExeName}"

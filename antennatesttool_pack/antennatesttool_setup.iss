@@ -2,12 +2,12 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "AntennaTestTool"
-#define MyAppVersion "1.0.2"
+#define MyAppVersion "1.0.2_0711"
 #define MyAppPublisher "Rockchip, Inc."
 #define MyAppURL "http://www.rock-chips.com/"
 #define MyAppExeName "AntennaTestTool.exe"
 #define CURDIR  
-#define APPPATH    "D:\rkprojs\antennatest_tool\bin"
+#define APPPATH    "E:\工作资料\瑞芯微电子\byd\rxw\AntennaTest\bin"
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
 ; Do not use the same AppId value in installers for other applications.
@@ -58,6 +58,8 @@ Source: "{#APPPATH}\AntennaTestTool.exe"; DestDir: "{app}"; Flags: ignoreversion
 ;Source: "校准和综测工具简要使用说明.pdf"; DestDir: "{app}"; Flags: ignoreversion
 ;Source: "8960固件升级方法.pdf"; DestDir: "{app}"; Flags: ignoreversion
 Source: "ReadMe.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "OtherConfig.ini"; DestDir: "{app}"; Flags: ignoreversion
+Source: "Config.exe"; DestDir: "{app}"; Flags: ignoreversion
 ;Source: "xmlconfig.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Lang\*"; DestDir: "{app}\Lang"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\gtidriver\Driver\*"; DestDir: "{app}\Driver"; Flags: ignoreversion recursesubdirs createallsubdirs

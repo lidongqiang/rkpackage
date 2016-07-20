@@ -1,0 +1,19 @@
+DEBUG 1.1.1 Jul 11 2016 log Message
+Time       Message
+----------------------------------------------------------------------------------------------
+11:14:34   language:CN
+
+11:14:34   new (0,g22,a23)
+
+11:14:37   exit 0
+
+11:14:37   ScanDeviceProc exit 2
+
+11:14:37   deviceScanThread exit
+
+11:14:37   ++storeStructData(0x00d6f328,296,0x00d6f448)
+
+11:14:37   @@CalculateCRC:0xF346
+
+11:14:37   --storeStructData():1
+

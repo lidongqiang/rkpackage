@@ -2,11 +2,11 @@
 ; 有关创建 Inno Setup 脚本文件的详细资料请查阅帮助文档！
 
 #define MyAppName "SNWTool"
-#define MyAppVersion "1.25.02_0427"
+#define MyAppVersion "1.25.04_0711"
 #define MyAppPublisher "Fuzhou Rockchip Electronics Co., Ltd."
 #define MyAppURL "http://www.rock-chips.com/"
 #define MyAppExeName "SNWTool.exe"
-#define APPPATH    "D:\rkprojs\snwtool\bin"
+#define APPPATH    "E:\工作资料\瑞芯微电子\byd\rxw\SNWTool\bin"
 [Setup]
 ; 注: AppId的值为单独标识该应用程序。
 ; 不要为其他安装程序使用相同的AppId值。
@@ -47,6 +47,8 @@ Source: "config_en.bin"   ; DestDir: "{app}"; Flags: ignoreversion onlyifdoesnte
 Source: "config.ini"      ; DestDir: "{app}"; Flags: ignoreversion onlyifdoesntexist; DestName: "config.ini"
 Source: "1.ini"   ; DestDir: "{app}"; Flags: ignoreversion ;
 Source: "2.ini"   ; DestDir: "{app}"; Flags: ignoreversion ;
+Source: "Config.exe"    ; DestDir: "{app}"; Flags: ignoreversion
+Source: "OtherConfig.ini"; DestDir: "{app}"; Flags: ignoreversion
 Source: "autoinfo.bin"; DestDir: "{app}"; Flags: ignoreversion
 Source: "IPICOM.DLL"; DestDir: "{app}"; Flags: ignoreversion
 Source: "libipcs.dll"; DestDir: "{app}"; Flags: ignoreversion

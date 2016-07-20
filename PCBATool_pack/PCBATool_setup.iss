@@ -44,6 +44,8 @@ Source: "config_cn.ini"   ; DestDir: "{app}"; Flags: ignoreversion onlyifdoesnte
 Source: "config_en.ini"   ; DestDir: "{app}"; Flags: ignoreversion onlyifdoesntexist; Languages: en ;DestName: "config.ini"Source: "libipcs.dll"; DestDir: "{app}"; Flags: ignoreversionSource: "libipcs_com_plugin.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "libipcs_tcpip_plugin.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "PCBATool.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "Config.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "OtherConfig.ini"; DestDir: "{app}"; Flags: ignoreversion
 Source: "ReadMe.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Lan\*"; DestDir: "{app}\Lan"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\gtidriver\Driver\*"; DestDir: "{app}\Driver"; Flags: ignoreversion recursesubdirs createallsubdirs

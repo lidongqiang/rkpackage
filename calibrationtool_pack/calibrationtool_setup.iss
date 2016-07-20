@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "CalibrationTool"
-#define MyAppVersion "1.34.05_0524"
+#define MyAppVersion "1.34.05_0711"
 #define MyAppPublisher "Rockchip, Inc."
 #define MyAppURL "http://www.rock-chips.com/"
 #define MyAppExeName "CalibrationTool.exe"
@@ -57,6 +57,8 @@ Source: "config_en.ini"   ; DestDir: "{app}"; Flags: ignoreversion onlyifdoesnte
 Source: "CalibrationTool.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "校准和综测工具简要使用说明.pdf"; DestDir: "{app}"; Flags: ignoreversion
 Source: "8960固件升级方法.pdf"; DestDir: "{app}"; Flags: ignoreversion
+Source: "Config.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "OtherConfig.ini"; DestDir: "{app}"; Flags: ignoreversion
 Source: "ReadMe.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "xmlconfig.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Language\*"; DestDir: "{app}\Language"; Flags: ignoreversion recursesubdirs createallsubdirs

@@ -1,1 +1,0 @@
-adb push c:\Users\lansh\Desktop\helloworld /system/bin
